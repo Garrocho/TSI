@@ -1,0 +1,14 @@
+{
+"Nome": "Sistemas para Internet",
+"Local": "Nucleo de Informatica",
+"Turmas": { 
+            "2011": [{
+                    "Nome": "Web Service",
+                    "Professor": "Rafael",
+                    "Alunos": [{
+                            "Nome": "Charles",
+                            "Nota": "9"
+                            }]
+                    }]
+            }
+}
