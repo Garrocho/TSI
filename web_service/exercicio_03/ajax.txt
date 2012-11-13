@@ -1,0 +1,22 @@
+function crizXMLHttp() {
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+		xmlhttp = new XMLHttpRequest();
+	else if (window.ActiveXObject)
+		cmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	else
+		alert("Seu navegador está desatualizado!");
+	return xmlhttp;
+}
+
+var divHTML = document.getElementById("info_turma");
+var XMLHttp = criaXMLHttp();
+XMLHttp.onreadystatechange = function() {
+	if (XMLHttp.readyState == 4)
+		if (XMLHttp.status == 200)
+			divHTML.innerHTML = XMLHttp.respondeText;
+	else
+		divHTML.innerHTML = "<p>Carregando...</p>";
+};
+
+XMLHttp.send(null);
