@@ -1,4 +1,4 @@
-function crizXMLHttp() {
+function criaXMLHttp() {
 	var xmlhttp;
 	if (window.XMLHttpRequest)
 		xmlhttp = new XMLHttpRequest();
