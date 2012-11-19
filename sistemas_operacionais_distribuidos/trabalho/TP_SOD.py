@@ -32,7 +32,6 @@ class ForcaBruta:
 
     def run(self):
         for senha in self.combinacao:
-            print senha
             if crypt.crypt(''.join(senha), self.salt) == self.crpt:
                 print 'Senha: {0}'.format(''.join(senha))
                 exit()
@@ -41,7 +40,7 @@ def obterUsuarios():
 	"""
 	Obtem as linhas com os dados dos usuarios do arquivo /etc/shadow
 	"""
-	arq = open('/etc/shadow').read()
+	arq = open('./shadow.txt').read()
 	return re.findall(u'\n(.*?):\$(.*?)\$(.*?)\$(.*?):', arq)
 	
 def geraCombinacoes(caracteres, tamanhoMaximo):
@@ -57,8 +56,6 @@ def descobreSenha():
 	salt = obterUsuarios()[0]
 	crpt = '${0}${1}${2}'.format(salt[1], salt[2], salt[3])
 	salt = '${0}${1}$'.format(salt[1], salt[2])
-	print salt
-	print crpt
 	
 	senhas.append(ForcaBruta(geraCombinacoes(NUMEROS, 6), crpt, salt))
 	#senhas.append(ForcaBruta(geraCombinacoes(NUMEROS, 7), crpt, salt))
