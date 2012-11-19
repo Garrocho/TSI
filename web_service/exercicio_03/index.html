@@ -11,29 +11,47 @@
     </script>
 
     <script>
-        $(document).ready(function(){
-            $('#carregar').click(function(){
-                $.getJSON('dados.json', function(data) {
-                    $('#Nome').html( data.Nome);
-                    $('#Local').html( data.Local);
-                    $('#Turmas').html( data.Turmas.Amarela[0].Nome);
-                    $('#Professor').html( data.Turmas.Amarela[0].Professor);
-            });
-        });
-
-    });
+        function criaXMLHttp() {
+				var xmlhttp;
+				if (window.XMLHttpRequest)
+					xmlhttp = new XMLHttpRequest();
+				else if (window.ActiveXObject)
+					cmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				else
+					alert("Seu navegador está desatualizado!");
+				return xmlhttp;
+			}
+			
+			function carregar() {
+				var XMLHttp = criaXMLHttp();
+				XMLHttp.open("GET", "dados.json", true);
+				XMLHttp.onreadystatechange = function() {
+					if (XMLHttp.readyState == 4) {
+						if (XMLHttp.status == 200) {
+							var jason = JSON.parse(XMLHttp.responseText);
+							document.getElementById("nome").innerHTML = jason.Nome;
+                     document.getElementById("local").innerHTML = jason.Local;
+                     document.getElementById("turmas").innerHTML = jason.Turmas.Amarela[0].Nome;
+                     document.getElementById("professor").innerHTML = jason.Turmas.Amarela[0].Professor;
+						}
+					}
+					else
+						document.getElementById("nome").innerHTML("<p>Carregando...</p>");
+				};
+				XMLHttp.send(null);
+			}
   </script>
 </head>
 
 <body>
 
-<input type="button" id="carregar" value="clique aqui" />
+<input type="button" id="carregar" value="clique aqui" onclick="carregar()" />
  <br />
  <br />
-<strong>Nome:</strong> <span id="Nome"></span><br />
-<strong>Local:</strong> <span id="Local"></span><br />
-<strong>Disciplina:</strong> <span id="Turmas"></span><br />
-<strong>PRofessor:</strong> <span id="Professor"></span><br />
+<strong>Nome:</strong> <span id="nome"></span><br />
+<strong>Local:</strong> <span id="local"></span><br />
+<strong>Disciplina:</strong> <span id="turmas"></span><br />
+<strong>Professor:</strong> <span id="professor"></span><br />
 </body>
 
 </html>
