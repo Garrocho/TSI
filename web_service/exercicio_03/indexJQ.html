@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Exemplo JSON</title>
+    <script src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.4");
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#carregar').click(function(){
+                $.getJSON('dados.json', function(data) {
+                    $('#Nome').html( data.Nome);
+                    $('#Local').html( data.Local);
+                    $('#Turmas').html( data.Turmas.Amarela[0].Nome);
+                    $('#Professor').html( data.Turmas.Amarela[0].Professor);
+            });
+        });
+
+    });
+  </script>
+</head>
+
+<body>
+
+<input type="button" id="carregar" value="clique aqui" />
+ <br />
+ <br />
+<strong>Nome:</strong> <span id="Nome"></span><br />
+<strong>Local:</strong> <span id="Local"></span><br />
+<strong>Disciplina:</strong> <span id="Turmas"></span><br />
+<strong>PRofessor:</strong> <span id="Professor"></span><br />
+</body>
+
+</html>
+
