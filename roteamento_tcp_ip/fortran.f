@@ -13,7 +13,6 @@ program dijkstra
       write(*,*) 'Enter number of edges.'
       read(*,*) E
       
-!     initialize
       do i=1,V
          do j=1,V
             adjMatrix(i,j) = INF
@@ -22,17 +21,15 @@ program dijkstra
          visited(i) = 0
       end do
       
-!     Input graph --
-      write(*,*) 'Enter start node and target node'
+      write(*,*) 'Entre com os dados'
       read(*,*) s,g
-      write(*,*) 'Enter cost of u to v.(u v cost) '
-      write(*,*) 'u and v range of [1,100].'
+      write(*,*) 'Entre com o custo'
+      write(*,*) 'entre com o vetor'
       do i=1,E
          read(*,*) f,t,cost
          adjMatrix(f,t) = cost
       end do
       
-!     Dijkstra's algorithm
       dist(s) = 0
       prev(s) = -1
       do
@@ -55,8 +52,7 @@ program dijkstra
          end do
       end do
       
-!     Display
-      write(*,*) 'min cost',dist(g)
+      write(*,*) 'menor caminho ',dist(g)
       i = 1
       do 
          write(*,*) g
