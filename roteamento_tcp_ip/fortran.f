@@ -8,9 +8,9 @@ program dijkstra
       integer,dimension(100,100) :: adjMatrix
       integer,dimension(100) :: dist,prev,visited
       character answer*100
-      write(*,*) 'Enter number of nodes.'
+      write(*,*) 'Entre com o numero de nos:'
       read(*,*) V
-      write(*,*) 'Enter number of edges.'
+      write(*,*) 'Entre com o numero de bordas:'
       read(*,*) E
       
       do i=1,V
