@@ -1,4 +1,4 @@
 TCP IP / ROTEAMENTO
 -------------------
 
-Repositório da disciplina de roteamento.
+Repositório para implementações de estudos da disciplina de roteamento.
