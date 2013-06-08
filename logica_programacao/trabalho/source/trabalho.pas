@@ -1,5 +1,4 @@
 program trabalho;
-
 uses crt;
 type tregdep = record
 				codigo:integer;
@@ -199,7 +198,6 @@ var r:treghistsal;
 	achou:boolean;
 begin
 	seek(hs,0);
-
 	posicao:=0;
 	achou:=false;
 	while (eof(hs)=false) and (achou=false) do
@@ -238,7 +236,6 @@ begin
 	else
 		pesquisafunc:=-1;
 end;
-
 
 //CADASTRO DEPARTAMENTO
 procedure cadastrodepartamento(var ad:tarqdep);
@@ -1334,7 +1331,6 @@ begin
           sair:=upcase(sair);
      until sair = 'S';
 end;
-
 
 //MENU DO PROGRAMA
 begin
