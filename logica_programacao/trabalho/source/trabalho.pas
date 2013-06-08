@@ -1,4 +1,5 @@
 program trabalho;
+
 uses crt;
 type tregdep = record
 				codigo:integer;
@@ -49,7 +50,6 @@ var arqdep:tarqdep;
 	arqhistdep:tarqhistdep;
 	arqhistfunc:tarqhistfunc;
 	op,opc,opd,ope:char;
-	
 
 //BORDA
 procedure borda;
@@ -94,3 +94,79 @@ Begin
         Else
         validacpf:=false;
 end;
+
+//VERIFICACAO DE DATA
+function verificadata(dia:integer;mes:integer;ano:integer):boolean;
+begin
+	if (mes > 12) or (ano<1000) or (ano>3000) or (dia >31) or (dia<=0) or (mes<=0) then
+					begin
+						verificadata:=false;
+					end
+					else
+					if (mes=4) or (mes=6) or (mes=9) or (mes=11)  then
+					begin
+						if dia > 30 then
+						begin
+							verificadata:=false;
+						end
+                        else
+                        begin
+							verificadata:=true;
+                        end;
+					end
+					else
+					if (mes=1) or (mes=3) or (mes=5) or (mes=7) or (mes=8) or (mes=10) or (mes=12) then
+					begin
+						if dia > 31 then
+						begin
+							verificadata:=false;
+						end
+						else
+						begin
+							verificadata:=true;
+						end;
+					end
+					else
+					if mes=2 then
+					begin
+						if dia > 29 then
+						begin
+							verificadata:=false;
+						end
+						else
+						if ((ano mod 4)=0) and ((ano mod 100)<>0) or ((ano mod 400)=0) then
+						begin
+							if mes=2 then
+							begin
+								if dia <= 29 then
+								begin
+									verificadata:=true;
+								end
+                                else
+                                begin
+                                    verificadata:=false;
+                                end;
+							end;
+						end
+						else
+						begin
+							if mes=2 then
+							begin
+								if dia > 29 then
+								begin
+									verificadata:=false;
+								end;
+							end
+							else
+							begin
+								verificadata:=true;
+							end;
+						end;
+					end
+					else
+					begin
+						verificadata:=true;
+					end;
+end;
+
+
