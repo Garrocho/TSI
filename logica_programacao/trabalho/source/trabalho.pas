@@ -239,3 +239,1099 @@ begin
 		pesquisafunc:=-1;
 end;
 
+
+//CADASTRO DEPARTAMENTO
+procedure cadastrodepartamento(var ad:tarqdep);
+var r:tregdep;
+	sair:char;
+begin
+	repeat
+		clrscr;
+        borda;
+        gotoxy(2,1);
+        write('CADASTRO DE DEPARTAMENTO');
+        gotoxy(30,2);
+        gotoxy(2,3);
+        write('CODIGO: ');
+        gotoxy(2,4);
+        write('NOME: ');
+        gotoxy(2,5);
+        write('RAMAL: ');
+        gotoxy(10,3);
+        readln(r.codigo);
+        if pesquisadep(arqdep,r.codigo) <> -1 then
+		begin
+            gotoxy(2,22);
+       		writeln('CODIGO REPETIDO!');
+            gotoxy(2,23);
+            writeln('DESEJA SAIR? S/N: ');
+            gotoxy(19,23);
+            sair:=readkey;
+            sair:=upcase(sair);
+		end
+		else
+		begin
+            gotoxy(8,4);
+            readln(r.nome);
+            gotoxy(9,5);
+            readln(r.ramal);
+            seek(ad,filesize(ad));
+            write(ad,r);
+            gotoxy(2,22);
+       		writeln('CADASTRO EFETUADO');
+            gotoxy(2,23);
+            writeln('DESEJA SAIR? S/N: ');
+            gotoxy(19,23);
+            sair:=readkey;
+            sair:=upcase(sair);
+        end;
+	until sair='S';
+end;
+
+//CADASTRO FUNCIONARIO
+procedure cadastrofuncionario(var af:tarqfunc;var ad:tarqdep;var ah:tarqhistsal);
+var r:tregfunc;
+	rh:treghistsal;
+	sair:char;
+	status:integer;
+	aux:string[4];
+	d,m,a:integer;
+begin
+	repeat
+		clrscr;
+        borda;
+        gotoxy(2,1);
+        write('CADASTRO DE FUNCIONARIOS');
+        gotoxy(2,3);
+		write('CODIGO DEPARTAMENTO: ');
+        gotoxy(2,4);
+        write('MATRICULA: ');
+        gotoxy(2,5);
+        write('NOME: ');
+        gotoxy(2,6);
+        write('SALARIO: ');
+        gotoxy(2,7);
+        write('DATA CONTRATACAO: ');
+        gotoxy(2,8);
+        write('DATA NASCIMENTO: ');
+        gotoxy(2,9);
+        write('RUA: ');
+        gotoxy(2,10);
+        write('NUMERO: ');
+        gotoxy(2,11);
+        write('COMPLEMENTO: ');
+        gotoxy(2,12);
+        write('BAIRRO: ');
+        gotoxy(2,13);
+        write('CIDADE: ');
+        gotoxy(2,14);
+        write('ESTADO: ');
+        gotoxy(2,15);
+        write('TELEFONE: ');
+        gotoxy(2,16);
+        write('E-MAIL: ');
+        gotoxy(2,17);
+        write('CPF: ');
+        gotoxy(23,3);
+		readln(r.codigodepartamento);
+		if pesquisadep(ad,r.codigodepartamento)=-1 then
+		begin
+            gotoxy(2,22);
+       		writeln('DEPARTAMENTO INEXISTENTE');
+		end
+		else
+		begin
+			gotoxy(13,4);
+			readln(r.matricula);
+			if pesquisafunc(af,r.matricula) <> -1 then
+			begin
+                 gotoxy(2,22);
+                 write('MATRICULA REPETIDA');
+			end
+            else
+            begin
+                 gotoxy(8,5);
+                 readln(r.nome);
+				 if (r.nome = '') or (r.nome = ' ') or (r.nome = '   ') or (r.nome = '    ') or (r.nome = '    ') or (r.nome = '     ') or (r.nome = '      ')   then
+				 begin
+                    gotoxy(2,22);
+                    writeln('NOME INVALIDO');
+                 end
+                 else
+                 begin
+                     gotoxy(11,6);
+			         readln(r.salario);
+					 if r.salario <= 0 then
+					 begin
+                        gotoxy(2,22);
+						writeln('SALARIO INVALIDO');
+					 end
+					 else
+					 begin
+                        gotoxy(20,7);
+						readln(r.datacontratacao);
+						aux:=copy(r.datacontratacao,1,2);
+						val(aux,d,status);
+						if status <> 0 then
+						begin
+                            gotoxy(2,22);
+							writeln('DIA INVALIDO');
+						end
+						else
+						begin
+							aux:=copy(r.datacontratacao,4,2);
+							val(aux,m,status);
+							if status <> 0 then
+							begin
+                                gotoxy(2,22);
+								writeln('MES INVALIDO');
+							end
+							else
+							begin
+								aux:=copy(r.datacontratacao,7,4);
+								val(aux,a,status);
+								if status <> 0 then
+								begin
+                                    gotoxy(2,22);
+									writeln('ANO INVALIDO');
+								end
+								else
+								if (verificadata(d,m,a)=false) then
+								begin
+                                    gotoxy(2,22);
+									writeln('DATA INVALIDA');
+								end
+								else
+								begin		
+									gotoxy(19,8);
+									readln(r.datanascimento);
+									aux:=copy(r.datanascimento,1,2);
+									val(aux,d,status);
+									if status <> 0 then
+									begin
+                                        gotoxy(2,22);
+										writeln('DIA INVALIDO');
+									end
+									else
+									begin
+										aux:=copy(r.datanascimento,4,2);
+										val(aux,m,status);
+										if status <> 0 then
+										begin
+                                            gotoxy(2,22);
+											writeln('MES INVALIDO');
+										end
+										else
+										begin
+											aux:=copy(r.datanascimento,7,4);
+											val(aux,a,status);
+										if status <> 0 then
+										begin
+                                            gotoxy(2,22);
+											writeln('ANO INVALIDO');
+										end
+										else
+										begin
+											if verificadata(d,m,a) <> true then
+											begin
+			                                     gotoxy(2,22);
+                                                 writeln('DATA INVALIDA');
+											end
+											else
+											begin
+                                                gotoxy(7,9);
+												readln(r.rua);
+                                                gotoxy(10,10);
+												readln(r.numero);
+                                                gotoxy(15,11);
+												readln(r.complemento);
+                                                gotoxy(10,12);
+												readln(r.bairro);
+                                                gotoxy(10,13);
+												readln(r.cidade);
+                                                gotoxy(10,14);
+												readln(r.estado);
+												gotoxy(12,15);
+												readln(r.telefone);
+												gotoxy(10,16);
+												readln(r.email);		
+												gotoxy(7,17);
+												readln(r.cpf);
+												if validacpf(r.cpf) = false then
+												begin
+                                                    gotoxy(2,22);
+													writeln('CPF INVALIDO');
+												end
+												else
+												begin
+												     seek(af,filesize(af));
+												     write(af,r);
+												     rh.matricula:=r.matricula;
+												     rh.salario:=r.salario;
+												     aux:=copy(r.datacontratacao,4,2);
+												     val(aux,rh.mes,status);
+												     aux:=copy(r.datacontratacao,7,4);
+                                                     val(aux,rh.ano,status);
+                                                     seek(ah,filesize(ah));
+                                                     write(ah,rh);
+                                                     gotoxy(2,22);
+                                                     writeln('CADASTRO EFETUADO');
+												end;
+											end;
+										end;
+									end;
+								end;
+							end;
+						end;
+					end;
+                end;
+             end;
+         end;
+       end;
+      gotoxy(2,23);
+      writeln('DESEJA SAIR? S/N: ');
+      gotoxy(19,23);
+      sair:=readkey;
+      sair:=upcase(sair);
+  	until sair = 'S';
+end;
+
+//ALTERAR SALARIO
+procedure alterarsalario(var af:tarqfunc;var hs:tarqhistsal);
+var rf:tregfunc;
+	posicao:integer;
+	rh:treghistsal;
+	sair:char;
+begin
+	repeat
+		clrscr;
+        borda;
+        gotoxy(2,1);
+        write('ALTERACAO DE SALARIO');
+        gotoxy(2,3);
+        write('MATRICULA: ');
+        gotoxy(13,3);
+        readln(rf.matricula);
+		posicao:=pesquisafunc(af,rf.matricula);
+		if posicao = -1 then
+		begin
+            gotoxy(2,22);
+			writeln('MATRICULA INEXISTENTE');
+		end
+		else
+        begin
+             gotoxy(2,4);
+             write('NOVO SALARIO: ');
+             gotoxy(2,5);
+             write('MES DE ALTERACAO: ');
+             gotoxy(2,6);
+             write('ANO DE ALTERACAO: ');
+			seek(af,posicao);
+			read(af,rf);
+            gotoxy(16,4);
+			readln(rf.salario);
+			if rf.salario <= 0 then
+			begin
+                gotoxy(2,22);
+				writeln('SALARIO INVALIDO');
+			end
+			else
+			begin
+				rh.matricula:=rf.matricula;
+                gotoxy(20,5);
+				readln(rh.mes);
+                gotoxy(20,6);
+				readln(rh.ano);
+				if pesquisahistoricosalario(arqhistsal,rf.matricula,rh.mes,rh.ano) = -1 then
+				begin
+					seek(af,posicao);
+					write(af,rf);
+					seek(hs,filesize(hs));
+					write(hs,rh);
+                    gotoxy(2,22);
+                    writeln('ALTERACAO EFETUADA');
+				end
+				else
+				begin
+                    gotoxy(2,22);
+					writeln('DATA INVALIDA');
+				end;
+			end;
+		end;
+        gotoxy(2,23);
+        writeln('DESEJA SAIR? S/N: ');
+        gotoxy(19,23);
+        sair:=readkey;
+        sair:=upcase(sair);
+	until sair = 'S';
+end;
+
+//ALTERAR GERENTE DEPARTAMENTO
+procedure alterardepartamento(var ad:tarqdep;var hd:tarqhistdep);
+var rd:tregdep;
+	rh:treghistdep;
+	rf:tregfunc;
+	posicao,status:integer;
+	sair:char;
+	d,m,a:integer;
+	aux,mes,ano:string[6];
+begin
+	repeat
+		clrscr;
+        borda;
+        gotoxy(2,1);
+        write('ALTERACAO DE GERENTE DE UM DEPARTAMENTO');
+        gotoxy(2,3);
+		write('CODIGO DO DEPARTAMENTO: ');
+        gotoxy(26,3);
+		readln(rd.codigo);
+		posicao:=pesquisadep(ad,rd.codigo);
+		if posicao = -1 then
+		begin
+            gotoxy(27,20);
+			writeln('DEPARTAMENTO INEXISTENTE');
+		end
+		else
+		begin
+            gotoxy(2,4);
+			write('MATRICULA DO NOVO GERENTE: ');
+            gotoxy(2,5);
+            write('DATA DE ALTERACAO: ');
+            gotoxy(29,4);
+			readln(rf.matricula);
+			if pesquisafunc(arqfunc,rf.matricula)=-1 then
+			begin
+                gotoxy(2,22);
+				writeln('FUNCIONARIO INEXISTENTE');
+			end
+			else
+			begin
+                gotoxy(21,5);
+				readln(rh.data);
+				aux:=copy(rh.data,1,2);
+				val(aux,d,status);
+				if status <> 0 then
+				begin
+                    gotoxy(2,22);
+					writeln('DIA INVALIDO');
+				end
+				else
+				begin
+					aux:=copy(rh.data,4,2);
+					val(aux,m,status);
+					if status <> 0 then
+					begin
+                        gotoxy(2,22);
+						writeln('MES INVALIDO');
+					end
+					else
+					begin
+						aux:=copy(rh.data,7,4);
+						val(aux,a,status);
+						if status <> 0 then
+						begin
+                            gotoxy(2,22);
+							writeln('ANO INVALIDO');
+						end
+						else
+						if verificadata(d,m,a)=false then
+						begin
+                            gotoxy(2,22);
+							writeln('DATA INVALIDA');
+						end
+						else
+						begin
+						     aux:=copy(rh.data,4,3);
+						     mes:=aux;
+						     aux:=copy(rh.data,7,5);
+						     ano:=aux;
+							 rh.data:=mes+ano;
+							 rh.codigogerente:=rf.matricula;
+							 rh.codigodepartamento:=rd.codigo;
+							 seek(hd,filesize(hd));
+							 write(hd,rh);
+							 seek(ad,posicao);
+						     write(ad,rd);
+                             gotoxy(2,22);
+                             writeln('ALTERACAO EFETUADA');
+						end;
+					end;
+				end;
+			end;
+		end;
+        gotoxy(2,23);
+        writeln('DESEJA SAIR? S/N: ');
+        gotoxy(19,23);
+        sair:=readkey;
+        sair:=upcase(sair);;
+	until sair = 'S';
+end;
+//ALTERAR FUNCIONARIO
+procedure alterarfuncionario(var af:tarqfunc;var hf:tarqhistfunc);
+var r:tregfunc;
+	rd:tregdep;
+	posicao:integer;
+	rf:treghistfunc;
+	sair:char;
+	d,m,a:integer;
+	aux:string[4];
+	status:integer;
+begin
+	repeat
+		clrscr;
+        borda;
+        gotoxy(2,1);
+        write('ALTERACAO DE FUNCIONARIO');
+        gotoxy(2,3);
+		write('MATRICULA: ');
+        gotoxy(13,3);
+		readln(r.matricula);
+		posicao:=pesquisafunc(af,r.matricula);
+		if posicao = -1 then
+		begin
+            gotoxy(2,22);
+			writeln('MATRICULA INEXISTENTE');
+		end
+		else
+		begin
+			seek(af,posicao);
+			read(af,r);
+            gotoxy(2,4);
+			write('NOME: ');
+            gotoxy(2,5);
+            write('CODIGO DE DEPARTAMENTO: ');
+            gotoxy(2,6);
+            write('SALARIO: ');
+            gotoxy(2,7);
+            write('DATA DE NASCIMENTO: ');
+            gotoxy(2,8);
+            write('RUA: ');
+            gotoxy(2,9);
+			write('NUMERO: ');
+			gotoxy(2,10);
+			write('BAIRRO: ');
+            gotoxy(2,11);
+			write('COMPLEMENTO: ');
+            gotoxy(2,12);
+			write('CIDADE: ');
+			gotoxy(2,13);
+			write('ESTADO: ');
+			gotoxy(2,14);
+			write('TELEFONE: ');
+            gotoxy(2,15);
+		    write('E-MAIL: ');
+            gotoxy(2,16);
+			write('CPF: ');
+            gotoxy(2,17);
+            write('DATA DE MODIFICACAO: ');
+            gotoxy(8,4);
+			readln(r.nome);
+			if (r.nome = '') or (r.nome = ' ') or (r.nome = '   ') or (r.nome = '    ') or (r.nome = '    ') or (r.nome = '     ') or (r.nome = '      ')   then
+			begin
+                gotoxy(2,22);
+				writeln('O NOME NAO PODE SER VAZIO');
+			end
+			else
+			begin
+            gotoxy(26,5);
+			readln(rd.codigo);
+			if pesquisadep(arqdep,rd.codigo)=-1 then
+			begin
+                gotoxy(2,22);
+				writeln('DEPARTAMENTO INEXISTENTE');
+			end
+			else
+			begin
+				gotoxy(11,6);
+				readln(r.salario);
+				if r.salario <= 0 then
+				begin
+                    gotoxy(2,22);
+					writeln('VALOR INCORRETO');
+				end
+				else
+				begin
+                                    gotoxy(22,7);
+									readln(r.datanascimento);
+									aux:=copy(r.datanascimento,1,2);
+									val(aux,d,status);
+									if status <> 0 then
+									begin
+                                        gotoxy(2,22);
+										writeln('DIA INVALIDO');
+									end
+									else
+									begin
+										aux:=copy(r.datanascimento,4,2);
+										val(aux,m,status);
+										if status <> 0 then
+										begin
+                                            gotoxy(2,22);
+											writeln('MES INVALIDO');
+										end
+										else
+										begin
+											aux:=copy(r.datanascimento,7,4);
+											val(aux,a,status);
+											if status <> 0 then
+											begin
+                                                gotoxy(2,22);
+												writeln('ANO INVALIDO');
+											end
+											else
+											begin
+												if verificadata(d,m,a)=true then
+												begin
+                                                    gotoxy(7,8);
+													readln(r.rua);
+													gotoxy(10,9);
+													readln(r.numero);
+													gotoxy(10,10);
+													readln(r.bairro);
+                                                    gotoxy(15,11);
+													readln(r.complemento);
+													gotoxy(10,12);
+													readln(r.cidade);
+													gotoxy(10,13);
+													readln(r.estado);
+													gotoxy(12,14);
+													readln(r.telefone);
+													gotoxy(10,15);
+													readln(r.email);		
+													gotoxy(7,16);
+													readln(r.cpf);
+													if validacpf(r.cpf) = false then
+													begin
+                                                        gotoxy(2,22);
+														writeln('CPF INVALIDO');
+													end
+													else
+													begin
+                                                            gotoxy(21,17);
+															readln(rf.data);
+															aux:=copy(rf.data,1,2);
+															val(aux,d,status);
+															if status <> 0 then
+															begin
+                                                                 gotoxy(2,22);
+                                                                 writeln('DIA INVALIDO');
+															end
+															else
+															begin
+																aux:=copy(rf.data,4,2);
+																val(aux,m,status);
+																if status <> 0 then
+																begin
+																	gotoxy(2,22);
+                                                                    writeln('MES INVALIDO');
+																end
+																else
+																begin
+																	aux:=copy(rf.data,7,4);
+																	val(aux,a,status);
+																	if status <> 0 then
+																	begin
+                                                                         gotoxy(2,22);
+                                                                         writeln('ANO INVALIDO');
+																	end
+																	else
+																	begin
+																		if verificadata(d,m,a)=true then
+																		begin
+																			rf.matriculafuncionario:=r.matricula;
+																			rf.codigodepartamento:=rd.codigo;
+																			seek(af,posicao);
+																			write(af,r);
+																			seek(hf,filesize(hf));
+																			write(hf,rf);
+																		end
+																		else
+																		begin
+                                                                             gotoxy(2,22);
+                                                                             writeln('DATA INVALIDA');
+																		end;
+																	end;
+																end;
+															end;
+														end;
+													end;
+												end;
+											end;
+										end;
+									end;
+								end;
+							end;
+						end;
+        gotoxy(2,23);
+        writeln('DESEJA SAIR? S/N: ');
+        gotoxy(19,23);
+        sair:=readkey;
+        sair:=upcase(sair);
+	until sair = 'S';
+end;
+
+//ALTERAR DEPARTAMENTO FUNCIONARIO
+procedure alterardepartamentofuncionario(var af:tarqfunc;var hd:tarqhistdep;var ad:tarqdep);
+var rf:tregfunc;
+	rd:tregdep;
+	rh:treghistfunc;
+	rhd:treghistdep;
+	posicao:integer;
+	sair:char;
+	d,m,a:integer;
+	aux:string[4];
+	status:integer;
+	mes,ano:string;
+begin
+	repeat
+		clrscr;
+        borda;
+        gotoxy(2,1);
+        write('ALTERACAO DE DEPARTAMENTO DE FUNCIONARIO');
+        gotoxy(2,3);
+		write('MATRICULA: ');
+        gotoxy(13,3);
+		readln(rf.matricula);
+		if pesquisafunc(af,rf.matricula) = -1 then
+		begin
+            gotoxy(2,22);
+			writeln('MATRICULA INEXISTENTE');
+		end
+		else
+		begin
+            gotoxy(2,4);
+            write('CODIGO DO NOVO DEPARTAMENTO: ');
+            gotoxy(2,5);
+            write('DATA DE ALTERACAO: ');
+            gotoxy(31,4);
+			readln(rd.codigo);
+			posicao:=pesquisadep(ad,rd.codigo);
+			if posicao = -1 then
+			begin
+                gotoxy(2,22);
+				write('DEPARTAMENTO INEXISTENTE');
+			end
+			else
+			begin
+                gotoxy(20,5);
+				readln(rh.data);
+				aux:=copy(rh.data,1,2);
+				val(aux,d,status);
+				if status <> 0 then
+				begin
+                     gotoxy(2,22);
+				     write('DIA INVALIDO');
+				end
+				else
+				begin
+					aux:=copy(rh.data,4,2);
+					val(aux,m,status);
+					if status <> 0 then
+					begin
+                         gotoxy(2,22);
+                         write('MES INVALIDO')
+					end
+					else
+					begin
+						aux:=copy(rh.data,7,4);
+						val(aux,a,status);
+						if status <> 0 then
+						begin
+                             gotoxy(2,22);
+                             write('ANO INVALIDO')
+						end
+						else
+						if  verificadata(d,m,a)=false then
+						begin
+                             gotoxy(2,22);
+                             write('DATA INVALIDA')
+						end
+						else
+						begin
+								aux:=copy(rh.data,3,3);
+								mes:=aux;
+								aux:=copy(rh.data,6,5);
+								ano:=aux;
+								rhd.data:=mes+ano;
+								rhd.codigodepartamento:=rd.codigo;
+								rh.matriculafuncionario:=rf.matricula;
+								seek(hd,filesize(hd));
+								write(hd,rhd);
+								seek(ad,posicao);
+								write(ad,rd);
+                                gotoxy(2,22);
+                                writeln('ALTERACAO EFETUADA');
+						end;
+					end;
+				end;
+			end;
+		end;			
+        gotoxy(2,23);
+        writeln('DESEJA SAIR? S/N: ');
+        gotoxy(19,23);
+        sair:=readkey;
+        sair:=upcase(sair);
+	until sair = 'S';
+end;
+
+//CONSULTA FUNCIONARIO MATRICULA
+procedure consultafuncionariomatricula(var af:tarqfunc;var ad:tarqdep);
+var rf:tregfunc;
+	rd:tregdep;
+	sair:char;
+	posicao:integer;
+begin
+	repeat
+		clrscr;
+        borda;
+        gotoxy(2,1);
+        write('CONSULTA DE FUNCIONARIO POR MATRICULA');
+        gotoxy(2,3);
+		write('MATRICULA: ');
+        gotoxy(13,3);
+		readln(rf.matricula);
+		posicao:=pesquisafunc(arqfunc,rf.matricula);
+		if  posicao = -1 then
+		begin
+            gotoxy(2,22);
+			write('MATRICULA INEXISTENTE');
+		end
+		else
+		begin
+			seek(af,posicao);
+			read(af,rf);
+			writeln(' NOME: ',rf.nome);
+			writeln(' DATA DE NASCIMENTO: ',rf.datanascimento);
+			writeln(' RUA: ',rf.rua);
+			writeln(' NUMERO: ',rf.numero);
+			writeln(' BAIRRO: ',rf.bairro);
+			writeln(' COMPLEMENTO: ',rf.complemento);
+			writeln(' CIDADE: ',rf.cidade);
+			writeln(' ESTADO: ',rf.estado);
+			writeln(' TELEFONE: ',rf.telefone);
+			writeln(' E-MAIL: ',rf.email);
+			writeln(' CPF: ',rf.cpf);
+			posicao:=pesquisadep(ad,rf.codigodepartamento);
+			seek(ad,posicao);
+			read(ad,rd);
+			writeln(' DEPARTAMENTO: ',rd.nome);
+		end;
+        gotoxy(2,23);
+        writeln('DESEJA SAIR? S/N: ');
+        gotoxy(19,23);
+        sair:=readkey;
+        sair:=upcase(sair);
+	until sair = 'S';
+end;
+
+//GERAR FOLHA PAGAMENTO
+procedure gerarfolhapagamento(var af:tarqfunc;var ad:tarqdep);
+var rf:tregfunc;
+	rd:tregdep;
+	posicaofunc,posicao:integer;
+    i,l:integer;
+begin
+	clrscr;
+    borda;
+    posicaofunc:=filesize(af)-1;
+    gotoxy(2,1);
+    write('GERADOR DE FOLHA DE PAGAMENTO');
+    gotoxy(2,3);
+    write('NOME');
+    gotoxy(23,3);
+    write('SALARIO');
+    gotoxy(40,3);
+    write('DEPARTAMENTO');
+    i:=4;
+    l:=0;
+	while l<=posicaofunc do
+	begin
+        seek(af,l);
+		read(af,rf);
+        gotoxy(2,i);
+		write(rf.nome);
+        gotoxy(23,i);
+        write('R$ ',rf.salario:8:2);
+        posicao:=pesquisadep(ad,rf.codigodepartamento);
+		seek(ad,posicao);
+		read(ad,rd);
+        gotoxy(40,i);
+		write(rd.nome);
+        l:=l+1;
+	end;
+    gotoxy(2,23);
+	write('PRESSIONE ENTER PARA SAIR');
+    gotoxy(29,23);
+	readkey;
+end;
+
+//GERENTES DE UM DEPARTAMENTO
+procedure gerentesdeumdepartamento(var af:tarqfunc;var ah:tarqhistdep;var ad:tarqdep);
+var rf:tregfunc;
+	ra:treghistdep;
+	rd:tregdep;
+	sair:char;
+	posicao,posicaohist,l,i:integer;
+begin
+	repeat
+		clrscr;
+        borda;
+        gotoxy(2,1);
+        write('GERENTES DE UM DEPARTAMENTO');
+        gotoxy(2,3);
+		write('CODIGO DO DEPARTAMENTO: ');
+        gotoxy(26,3);
+		readln(rd.codigo);
+		posicao:=pesquisadep(ad,rd.codigo);
+		if posicao = -1 then
+		begin
+            gotoxy(2,22);
+			write('DEPARTAMENTO INEXISTENTE');
+		end
+		else
+		begin
+            gotoxy(2,4);
+            write('PERIODO');
+            gotoxy(12,4);
+            write('NOME');
+            gotoxy(40,4);
+            write('TELEFONE');
+            i:=5;
+            l:=0;
+            posicaohist:=filesize(ah)-1;
+            seek(ah,0);
+            while (l<=posicaohist) do
+            begin
+                seek(ah,l);
+                read(ah,ra);
+                gotoxy(2,i);
+                writeln(ra.data);
+				if ra.codigodepartamento = rd.codigo then
+				begin
+					posicao:=pesquisafunc(af,ra.codigogerente);
+					seek(af,posicao);
+					read(af,rf);
+                    gotoxy(12,i);
+					writeln(rf.nome);
+                    gotoxy(40,i);
+                    writeln(rf.telefone);
+				end;
+                i:=i+1;
+                l:=l+1;
+			end;
+		end;
+        gotoxy(2,23);
+        writeln('DESEJA SAIR? S/N: ');
+        gotoxy(19,23);
+        sair:=readkey;
+        sair:=upcase(sair);
+	until sair = 'S';
+end;
+
+//RELATORIO DE FUNCIONARIOS POR DEPARTAMENTO
+procedure relatoriodefuncionariopordepartamento(var af:tarqfunc;var ad:tarqdep);
+var rf:tregfunc;
+    rd:tregdep;
+    posicaofunc,posicaodep:integer;
+    sair:char;
+    i:integer;
+    total:real;
+begin
+     repeat
+           clrscr;
+           borda;
+           posicaofunc:=0;
+           posicaodep:=0;
+           gotoxy(2,1);
+           write('RELATORIO DE FUNCIONARIO POR DEPARTAMENTO');
+           gotoxy(2,3);
+           write('CODIGO DO DEPARTAMENTO: ');
+           gotoxy(26,3);
+           readln(rd.codigo);
+           posicaodep:=pesquisadep(ad,rd.codigo);
+           if posicaodep = -1 then
+           begin
+                gotoxy(2,22);
+                write('DEPARTAMENTO INEXISTENTE');
+           end
+           else
+           begin
+                total:=0;
+                seek(ad,posicaodep);
+                read(ad,rd);
+                gotoxy(2,4);
+                write('NOME DO DEPARTAMENTO: ');
+                gotoxy(24,4);
+                write(rd.nome);
+                gotoxy(2,5);
+                write('MATRICULA');
+                gotoxy(15,5);
+                write('NOME');
+                gotoxy(29,5);
+                write('SALARIO');
+                i:=6;
+                seek(af,posicaofunc);
+                while eof(af)=false do
+                begin
+                     read(af,rf);
+                     if rd.codigo = rf.codigodepartamento then
+                     begin
+                          gotoxy(2,i);
+                          write(rf.nome);
+                          gotoxy(15,i);
+                          write(rf.nome);
+                          gotoxy(29,i);
+                          write('R$ ',rf.salario:8:2);
+                          i:=i+1;
+                          total:=total+rf.salario;
+                     end;
+               end;
+               gotoxy(2,i+1);
+               write('TOTAL DA FOLHA DO DEPARTAMENTO: ');
+               gotoxy(34,i+1);
+               write(' R$ ',total:8:2);
+          end;
+          gotoxy(2,23);
+          writeln('DESEJA SAIR? S/N: ');
+          gotoxy(19,23);
+          sair:=readkey;
+          sair:=upcase(sair);
+     until sair = 'S';
+end;
+
+//HISTORICO DO SALARIO EM UM PERIODO
+procedure historicosalarioemperiodo(var af:tarqfunc;var ah:tarqhistsal);
+var rf:tregfunc;
+    rh:treghistsal;
+    sair:char;
+    datainicio,datafinal:string[15];
+    status,i,l,posicao,mesinicio,anoinicio,anofinal,mesfinal:integer;
+    aux:string[4];
+begin
+     repeat
+           clrscr;
+           borda;
+           gotoxy(2,1);
+           write('HISTORICO DE SALARIO DE UM FUNCIONARIO EM UM PERIODO');
+           gotoxy(2,3);
+           write('MATRICULA: ');
+           gotoxy(13,3);
+           readln(rf.matricula);
+           posicao:=pesquisafunc(af,rf.matricula);
+           if posicao = -1 then
+           begin
+                gotoxy(2,22);
+                write('MATRICULA INEXISTENTE');
+           end
+           else
+           begin
+                gotoxy(2,4);
+                write('DE MES / ANO: ');
+                gotoxy(24,4);
+                write('A MES / ANO: ');
+                gotoxy(16,4);
+                readln(datainicio);
+				aux:=copy(datainicio,1,2);
+				val(aux,mesinicio,status);
+				if status <> 0 then
+				begin
+                     gotoxy(2,22);
+                     writeln('MES INVALIDO');
+				end
+				else
+				begin
+				     aux:=copy(datainicio,4,4);
+				     val(aux,anoinicio,status);
+				     if status <> 0 then
+				     begin
+                          gotoxy(2,22);
+                          writeln('ANO INVALIDO');
+                     end
+                     else
+                     gotoxy(37,4);
+                     readln(datafinal);
+                     aux:=copy(datafinal,1,2);
+                     val(aux,mesfinal,status);
+                     if status <> 0 then
+                     begin
+                          gotoxy(2,22);
+                          writeln('MES INVALIDO');
+                     end
+                     else
+                     begin
+                          aux:=copy(datafinal,4,4);
+                          val(aux,anofinal,status);
+                          if status <> 0 then
+                          begin
+                               gotoxy(2,22);
+                               writeln('ANO INVALIDO');
+                          end
+                          else
+                          begin
+                               if (mesinicio<=0) and (mesinicio>31) and (anoinicio<=1900) and (anoinicio>=3000) and (mesfinal<=0) and (mesfinal>31) and (anofinal<=1900) and (anofinal>=3000) then
+                               begin
+                                    gotoxy(2,22);
+                                    writeln('DATA INVALIDA');
+                               end
+                               else
+                               begin
+                                    gotoxy(2,6);
+                                    write('PERIODO');
+                                    gotoxy(14,6);
+                                    write('SALARIO');
+                                    i:=8;
+                                    posicao:=filesize(ah)-1;
+                                    l:=0;
+                                    while l<posicao do
+                                    begin
+                                         seek(ah,l);
+                                         read(ah,rh);
+                                         if (rh.matricula = rf.matricula) then
+                                         begin
+                                              if (rh.ano>=anoinicio) and (rh.ano<=anofinal) then
+                                              begin
+                                                   if (rh.mes>=mesinicio) and (rh.ano=anoinicio) then
+                                                   begin
+                                                        gotoxy(2,i);
+                                                        write(rh.mes,'/',rh.ano);
+                                                        gotoxy(14,i);
+                                                        write('R$ ',rh.salario:8:2);
+                                                   end
+                                                   else
+                                                   begin
+                                                         if (rh.ano>anoinicio) and (rh.ano<anofinal) then
+                                                         begin
+                                                              gotoxy(2,i);
+                                                              write(rh.mes,'/',rh.ano);
+                                                              gotoxy(14,i);
+                                                              write('R$ ',rh.salario:8:2);
+                                                         end
+                                                         else
+                                                         begin
+                                                              if (rh.ano=anofinal) and (rh.mes<=mesfinal) then
+                                                              begin
+                                                                   gotoxy(2,i);
+                                                                   write(rh.mes,'/',rh.ano);
+                                                                   gotoxy(14,i);
+                                                                   write('R$ ',rh.salario:8:2);
+                                                              end;
+                                                         end;
+                                                   end;
+                                              end;
+                                         end;
+                                         l:=l+1;
+                                         i:=i+1;
+                                    end;
+                               end;
+                          end;
+                     end;
+               end;
+          end;
+          gotoxy(2,23);
+          writeln('DESEJA SAIR? S/N: ');
+          gotoxy(19,23);
+          sair:=readkey;
+          sair:=upcase(sair);
+     until sair = 'S';
+end;
+
