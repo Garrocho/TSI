@@ -1335,3 +1335,157 @@ begin
      until sair = 'S';
 end;
 
+
+//MENU DO PROGRAMA
+begin
+	assign(arqdep,'c:\tp\dep.dat');
+	{$I-}
+	reset(arqdep);
+	{$I+}
+	if IOresult <> 0 then
+		rewrite(arqdep);
+	assign(arqfunc,'c:\tp\func.dat');
+	{$I-}
+	reset(arqfunc);
+	{$I+}
+	if IOresult <> 0 then
+		rewrite(arqfunc);
+	assign(arqhistsal,'c:\tp\histsal.dat');
+	{$I-}
+	reset(arqhistsal);
+	{$I+}
+	if IOresult <> 0 then
+		rewrite(arqhistsal);
+	assign(arqhistdep,'c:\tp\histdep.dat');
+	{$I-}
+	reset(arqhistdep);
+	{$I+}
+	if IOresult <> 0 then
+		rewrite(arqhistdep);
+	assign(arqhistfunc,'c:\tp\histfunc.dat');
+	{$I-}
+	reset(arqhistfunc);
+	{$I+}
+	if IOresult <> 0 then
+		rewrite(arqhistfunc);
+    textbackground(black);
+    clrscr;
+    window(2,2,65,25);
+    textbackground(15);
+    clrscr;
+    writeln;
+    gotoXY(2,3);
+    textcolor(0);
+	repeat
+        textbackground(3);
+        clrscr;
+        borda;
+        gotoxy(2,1);
+        writeln('           CONTROLE DE FUNCIONARIOS                    ');
+		gotoxy(2,3);
+		writeln('           1 - CADASTRO                                 ');
+		gotoxy(2,5);
+		writeln('           2 - ALTERACAO                                 ');;
+		gotoxy(2,7);
+		writeln('           3 - CONSULTA                                  ');
+		gotoxy(2,9);
+		writeln('           4 - SAIR                                      ');
+        gotoxy(2,11);
+		writeln('           OPCAO:               ');
+        gotoxy(2,22);
+        writeln('IFET 2011 - CAMPUS BARBACENA');
+        gotoxy(2,23);
+        writeln('CHARLES GARROCHO, THIAGO GARROCHO');
+        gotoxy(19,11);
+		op:=readkey;
+        op:=upcase(op);
+		case op of
+			'1':begin
+                    repeat
+                       clrscr;
+                       borda;
+                       gotoxy(2,1);
+                       write('           CADASTRO    ');
+                       gotoxy(2,3);
+                       write('           1 - CADASTRO DE DEPARTAMENTO');
+                       gotoxy(2,5);
+                       write('           2 - CADASTRO DE FUNCIONARIO');
+                       gotoxy(2,7);
+                       write('           3 - SAIR');
+                       gotoxy(2,9);
+                       write('           OPCAO: ');
+                       gotoxy(19,9);
+                       opc:=readkey;
+                       case opc of
+                            '1':cadastrodepartamento(arqdep);
+                            '2':cadastrofuncionario(arqfunc,arqdep,arqhistsal);
+                       end;
+                    until opc = '3';
+                end;
+                '2':begin
+                    repeat
+                       clrscr;
+                       borda;
+                       gotoxy(2,1);
+                       write('           ALTERACAO  ');
+                       gotoxy(2,3);
+                       write('           1 - ALTERACAO DE FUNCIONARIO');
+                       gotoxy(2,5);
+                       write('           2 - ALTERACAO DE GERENTE DE DEPARTAMENTO');
+                       gotoxy(2,7);
+                       write('           3 - ALTERACAO DE SALARIO');
+                       gotoxy(2,9);
+                       write('           4 - ALTERACAO DE DEPARTAMENTO DE FUNCIONARIO');
+                       gotoxy(2,11);
+                       write('           5 - SAIR ');
+                       gotoxy(2,13);
+                       write('           OPCAO: ');
+                       gotoxy(19,13);
+                       opd:=readkey;
+                       case opd of
+                            '1':alterarfuncionario(arqfunc,arqhistfunc);
+                            '2':alterardepartamento(arqdep,arqhistdep);
+                            '3':alterarsalario(arqfunc,arqhistsal);
+                            '4':alterardepartamentofuncionario(arqfunc,arqhistdep,arqdep);
+                       end;
+                    until opd = '5';
+                end;
+             '3':begin
+                    repeat
+                       clrscr;
+                       borda;
+                       gotoxy(2,1);
+                       write('           CONSULTA  ');
+                       gotoxy(2,3);
+                       write('           1 - CONSULTA FUNCIONARIO POR MATRICULA');
+                       gotoxy(2,5);
+                       write('           2 - GERAR FOLHA PAGAMENTO ');
+                       gotoxy(2,7);
+                       write('           3 - GERENTES DE UM DEPARTAMENTO');
+                       gotoxy(2,9);
+                       write('           4 - RELATORIO DE FUNCIONARIO POR DEPARTAMENTO');
+                       gotoxy(2,11);
+                       write('           5 - HISTORICO DE SALARIO DE UM FUNCIONARIO ');
+                       gotoxy(2,13);
+                       write('           6 - SAIR');
+                       gotoxy(2,15);
+                       write('           OPCAO: ');
+                       gotoxy(19,15);
+                       ope:=readkey;
+                       case ope of
+                            '1':consultafuncionariomatricula(arqfunc,arqdep);
+                            '2':gerarfolhapagamento(arqfunc,arqdep);
+                            '3':gerentesdeumdepartamento(arqfunc,arqhistdep,arqdep);
+                            '4':relatoriodefuncionariopordepartamento(arqfunc,arqdep);
+                            '5':historicosalarioemperiodo(arqfunc,arqhistsal);
+                       end;
+                    until ope = '6';
+                end;
+		  end;
+	until op = '4';
+	close(arqdep);
+	close(arqfunc);
+	close(arqhistsal);
+	close(arqhistdep);
+	close(arqhistfunc);
+end.
