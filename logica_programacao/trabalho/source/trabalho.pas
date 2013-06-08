@@ -169,4 +169,73 @@ begin
 					end;
 end;
 
+//PESQUISA DEPARTAMENTO
+function pesquisadep (var ad:tarqdep; cod:integer):integer;
+var r:tregdep;
+	posicao:integer;
+	achou:boolean;
+begin
+	seek(ad,0);
+	posicao:=0;
+	achou:=false;
+	while (eof(ad)=false) and (achou=false) do
+	begin
+		read(ad,r);
+		if r.codigo=cod then
+			achou:=true
+		else
+			posicao:=posicao+1;
+	end;
+	if achou=true then
+		pesquisadep:=posicao
+	else
+		pesquisadep:=-1;
+end;
+
+//PESQUISA HISTORICO SALARIO
+function pesquisahistoricosalario (var hs:tarqhistsal; matricula,mes,ano:integer):integer;
+var r:treghistsal;
+	posicao:integer;
+	achou:boolean;
+begin
+	seek(hs,0);
+
+	posicao:=0;
+	achou:=false;
+	while (eof(hs)=false) and (achou=false) do
+	begin
+		read(hs,r);
+		if (r.matricula=matricula) and (r.mes>=mes) and (r.ano=ano) then
+			achou:=true
+		else
+			posicao:=posicao+1;
+	end;
+	if achou=true then
+		pesquisahistoricosalario:=posicao
+	else
+		pesquisahistoricosalario:=-1;
+end;
+
+//PESQUISA FUNCIONARIO
+function pesquisafunc (var af:tarqfunc; cod:integer):integer;
+var r:tregfunc;
+	posicao:integer;
+	achou:boolean;
+begin
+	seek(af,0);
+	posicao:=0;
+	achou:=false;
+	while (eof(af)=false) and (achou=false) do
+	begin
+		read(af,r);
+		if r.codigodepartamento=cod then
+			achou:=true
+		else
+			posicao:=posicao+1;
+	end;
+	if achou=true then
+		pesquisafunc:=posicao
+	else
+		pesquisafunc:=-1;
+end;
 
