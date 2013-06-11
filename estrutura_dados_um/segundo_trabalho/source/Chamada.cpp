@@ -1,3 +1,8 @@
+// @author: Charles Tim Batista Garrocho
+// @contact: charles.garrocho@gmail.com
+// @copyright: (C) 2013 Software Open Source
+
+
 #include "Chamada.h"
 #include "Metodos.h"
 #include "Pilha.h"

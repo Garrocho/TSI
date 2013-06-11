@@ -1,3 +1,7 @@
+// @author: Charles Tim Batista Garrocho
+// @contact: charles.garrocho@gmail.com
+// @copyright: (C) 2013 Software Open Source
+
 #include <stdio.h>
 #include <stdlib.h>
 
