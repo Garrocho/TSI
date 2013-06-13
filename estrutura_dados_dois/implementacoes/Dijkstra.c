@@ -1,3 +1,8 @@
+/* Arquivo: ordenacao.h
+ * Descrição: Este Arquivo Implementa o algoritimo Dikstra em C.
+ * Autor: Charles Tim Batista Garrocho
+ */
+
 #define MAX 10
 #define INFINITO 1000000;
 #define MEMBRO 1;
