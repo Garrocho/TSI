@@ -1,3 +1,9 @@
+/* Arquivo: ordenacao.h
+ * Descrição: Este Arquivo Define as Estrutura Utilizadas para a ordenação de palavras.
+ * Autor: Charles Tim Batista Garrocho
+ * Data: 08/06/2012
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

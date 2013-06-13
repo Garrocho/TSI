@@ -1,3 +1,9 @@
+/* Arquivo: funcoes.c
+ * Descrição: Este Arquivo implementa as funcoes definidas no arquivo "funcoes.h".
+ * Autor: Charles Tim Batista Garrocho
+ * Data: 08/06/2012
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "funcoes.h"

@@ -1,3 +1,9 @@
+/* Arquivo: funcoes.h
+ * Descrição: Este Arquivo Define as funcoes utilizadas para ordenacao dos arquivos.
+ * Autor: Charles Tim Batista Garrocho
+ * Data: 08/06/2012
+ */
+ 
 #ifndef FUNCOES_H
 #define FUNCOES_H
 

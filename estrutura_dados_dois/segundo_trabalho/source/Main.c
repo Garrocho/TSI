@@ -1,3 +1,9 @@
+/* Trabalho Pratico de Estrutura de Dados 2.
+ * Especificação: Ordenação Externa de Palavras Com Multiplos Caminhos.
+ * Autor: Charles Tim Batista Garrocho
+ * Data: 08/06/2012
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
