@@ -1,3 +1,8 @@
+// Autor: Charles Tim Batista Garrocho
+// Data: 25/09/2012
+// Contato: ctgarrocho@gmail.com
+// Descrição: Define e implementa as operações para um Grafo.
+
 #ifndef GRAFO_H
 #define GRAFO_H
 #include <string.h>
