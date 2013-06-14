@@ -1,0 +1,44 @@
+Estrutura analítica do projeto
+Em Gerência de projetos, uma Estrutura Analítica de Projetos (EAP), do Inglês, Work breakdown structure (WBS) é uma ferramenta de decomposição do trabalho do projeto em partes manejáveis. É estruturada em árvore exaustiva, hierárquica (de mais geral para mais específica) orientada às entregas (deliverables) que precisam ser feitas para completar um projeto.
+O objetivo de uma WBS é identificar elementos terminais (os produtos, serviços e resultados a serem feitos em um projeto). Assim, a WBS serve como base para a maior parte do planejamento de projeto. A ferramenta primária para descrever o escopo do projeto (trabalho) é a estrutura analítica do projeto (WBS).
+A Work Breakdown Structure é uma ferramenta bastante comum. Várias resoluções de trabalho do governo dos Estados Unidos têm como requerimento uma work breakdown structure.
+A WBS não é criada apenas para o gerente do projeto, mas para toda a equipe de execução do projeto, bem como para as demais partes interessadas tais como clientes e fornecedores.
+
+
+Como construir uma WBS
+A WBS deve ser completa, organizada e pequena o suficiente para tornar possível a medição do progresso, mas não detalhada o suficiente para se tornar, ela mesma, um obstáculo à realização do projeto. Uma boa heurística a seguir é a regra do 8-80: exige-se que um pacote de trabalho ocupe entre 8 e 80 horas de duração. É uma das partes mais importantes no plano do projeto. Ela serve como entrada para o desenvolvimento da agenda, atribuir funções e responsabilidades, gerir riscos, entre outros. Um exemplo simples de Work Breakdown Structure para pintar uma sala (orientado a entregas) é:
+Preparação de materiais
+Comprar tinta
+Comprar escada
+Comprar pincéis / rolos
+Comprar removedor de papel de parede
+Preparação da sala
+Remoção do papel de parede antigo
+Remoção das decorações destacáveis
+Cobrir chão com jornais
+Cobrir tomadas com fita
+Cobrir móveis com lençóis velhos
+Pintura da sala
+Pintar grandes áreas com rolo
+Pintar rodapés com pincel
+Limpeza da sala
+Jogar fora, ou guardar a tinta que sobrou
+Limpar pincéis e rolos
+Jogar fora jornais
+Remover e limpar lençóis
+Pacotes de Trabalho (parte da EAP)
+Atividades (não faz parte da EAP)
+Não há regras para os níveis de decomposição. Cada gerente de projeto ou membros da equipe encarregados da decomposição devem usar o bom senso de parar no nível no qual o custo de acompanhar o pacote seja inferior ao benefício de controle.
+Abaixo, o gráfico do exemplo acima:
+
+ Princípios para o projeto de uma WBS
+A regra dos 100%
+Um dos mais importantes princípios para o projeto de uma WBS é conhecido como a regra dos 100%. O Practice Standard for Work Breakdown Structures (Second Edition), publicado pelo Project Management Institute (PMI) define a regra 100% da forma como se segue:
+A Regra 100%... estabelece que a WBS inclui 100% do trabalho definido pelo escopo do projeto e captura todas as entregas – internas, externas, intermediarias – de forma ao trabalho estar completo, incluído o gerenciamento do projeto. A regra dos 100% é um dos mais importantes princípios que guia o desenvolvimento, decomposição e avaliação da WBS. A aplicação desta regra vale para todos os níveis na hierarquia: a soma de todos o trabalho dos níveis "filhos" deve ser igual a 100% do trabalho representado pelo "pai" e a WBS não deve incluir qualquer trabalho que saia do escopo existente do projeto, isto é, ele não pode incluir mais do que 100% do trabalho... É importante lembrar-se que a regra dos 100% também se aplica ao nível de atividades. O trabalho representado pelas atividades de cada pacote deve produzir 100% do trabalho necessário para completar o trabalho do pacote. (p. 8)
+Em outras definições deve-se considerar que a soma do trabalho sendo projetado deve ser 100% compatível com o nível "pai", ou seja, não deve conter trabalho a mais nem a menos do que foi proposto no nível imediatamente acima.
+Planeje entregas, não planeje ações
+Se o projetista da WBS tenta capturar qualquer detalhe orientado a ação na WBS, ele irá incluir ações de mais ou de menos. Ações demais excederão 100% do escopo do pai e ações de menos cairão abaixo dos 100% do escopo do pai. A melhor forma de ser aderente a Regra dos 100% é definir os elementos da WBS em termos das entregas ou resultados. Isto também assegura que a WBS não exagere na visão dos métodos, permitindo idéias mais criativas e inovadoras por parte dos participantes do projeto. Para projeto de desenvolvimento de novos produtos, a técnica mais comum para assegurar a orientação para a saída da WBS é o uso de uma estrutura de quebra do produto.Desenvolvimento orientado a aspectos utiliza-se de uma técnica similar a qual emprega uma estrutura de decomposição de aspectos. Quando um projeto provê serviços profissionais, uma técnica comum é capturar todas as entregas planejadas para criar uma WBS orientada à entrega. WBS que subdividem o trabalho em fases do projeto (por exemplo: Fase Projeto Preliminar, Fase projeto Critico) devem assegurar que as fases sejam claramente separadas para uma entrega (por exemplo: um documento de revisão de projeto preliminar, ou um documento aprovação da revisão projeto crítico)
+Nível de detalhe (granulosidade) e elaboração progressiva
+Uma questão a ser respondida no projeto de qualquer WBS é quando parar de quebrá-lo em elementos menores. Se os elementos finais da WBS são definidos de forma muito abrangente, não deve ser possível rastrear eficientemente a performance do projeto. Se os elementos finais da WBS são muito detalhados, será ineficiente manter um rastreamento de um número exagerado de elementos terminais, especialmente se o plano de trabalho é para um futuro distante. Um meio termo satisfatório pode ser encontrado no conceito de elaboração progressiva o qual permite que os detalhes da WBS sejam progressivamente refinados antes do trabalho ser iniciado. Uma forma de elaboração progressiva em grandes projetos é chamada de planejamento ondas sucessivas o qual estabelece um planejamento de tempo regular para elaboração progressiva. Na realidade, um limite efetivo da granulosidade da WBS pode ser alcançado quando ela não é maior do que é possível para se gerar saídas planejáveis, e os únicos detalhes remanescentes são as ações. A não ser que estas ações possam ser definidas para aderir a regra dos 100%, a WBS não pode ser mais subdividida.
+Esquema codificação WBS
+É comum para elementos WBS serem numerados sequencialmente para revelar a estrutura hierárquica. Por exemplo 1.4.2 Pneu Traseiroidentifica este item como o 3º elemento da WBS, pois há 3 números separados por ponto decimal. Um esquema de codificação também ajuda os elementos WBS serem reconhecidos em qualquer contexto escrito.

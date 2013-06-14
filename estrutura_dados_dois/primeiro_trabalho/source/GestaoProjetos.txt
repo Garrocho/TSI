@@ -1,0 +1,25 @@
+1 - O Ciclo de Vida de um projeto
+Todo o projeto pode ser subdividido em determinadas fases de desenvolvimento. Esta subdivisão permite um melhor controle total de recursos gastos.
+O ciclo de vida pode se dividido em um conjunto de fases, que, por sua vez, é subdividido em estágios, que é subdividido em atividades ou tarefas específicas em cada projeto. 
+Fases de um projeto:
+Fase de Iniciação (Definição), Fase de Planejamento, Fase de Execução, Fase de Monitoramento e Controle, Fase de Finalização (Encerramento).
+2 - A fase de iniciação
+É a fase inicial do projeto, quando uma determinada necessidade é identificada e transformada em um problema estruturado a ser resolvido por ele. Nessa fase a missão e o objetivo do projeto são definidos;
+3 - A preparação do escopo
+Escopo do projeto é o trabalho que precisa ser realizado para entregar um produto, serviço ou resultado com as características e funções especificadas.
+Preparação:
+1. Coletar requisitos;
+2. Definir Escopo;
+3. Criar a EAP;
+4. Verificar Escopo;
+5. Controlar Escopo
+4 - O EAP - Estrutura Analítica do Projeto (WBS)
+ É uma ferramenta de decomposição do trabalho do projeto em partes manejáveis. É estruturada em árvore exaustiva, hierárquica (de mais geral para mais específica) orientada às entregas (deliverables) que precisam ser feitas para completar um projeto.
+O objetivo de uma WBS é identificar elementos terminais (os produtos, serviços e resultados a serem feitos em um projeto). Assim, a WBS serve como base para a maior parte do planejamento de projeto. A ferramenta primária para descrever o escopo do projeto (trabalho) é a estrutura analítica do projeto (WBS).
+A Work Breakdown Structure é uma ferramenta bastante comum. Várias resoluções de trabalho do governo dos Estados Unidos têm como requerimento uma work breakdown structure.
+A WBS não é criada apenas para o gerente do projeto, mas para toda a equipe de execução do projeto, bem como para as demais partes interessadas tais como clientes e fornecedores.
+5 - O Project Charter
+O project charter é um documento que representa uma espécie de contrato firmado entre a equipe responsável pela condução do projeto e os gestores da empresa e tem os seguintes objetivos: apresentar claramente o que é esperado em relação à equipe; manter a equipe alinhada aos objetivos prioritários da empresa; formalizar a transição do projeto das mãos dos gestores para a equipe; e manter a equipe dentro do escopo definido para o projeto.
+6 - O seu projeto (canil)
+O projeto do Canil foi dividido em partes para cada um grupo da sala. O meu grupo ficou com a parte de cadastro de doações.
+De início criamos as classes principais do nosso projeto e definimos as validações e as funções cujo daram início a nossa parte no projeto.
