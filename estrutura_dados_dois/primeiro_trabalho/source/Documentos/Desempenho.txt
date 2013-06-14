@@ -1,0 +1,12 @@
+TABELA HASH
+Tempo Execucao....: 0.0160
+Consumo de Memoria: 34824.0000
+
+ARVORE AVL
+Tempo Execucao....: 0.1540
+Consumo de Memoria: 37672.0000
+
+ARVORE B
+Tempo Execucao....: 0.0140
+Consumo de Memoria: 1852.0000
+

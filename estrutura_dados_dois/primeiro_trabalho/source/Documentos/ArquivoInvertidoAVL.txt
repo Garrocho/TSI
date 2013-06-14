@@ -1,0 +1,591 @@
+PALAVRA:                 DocId: 1  Qtde: 51      DocId: 2  Qtde: 34      DocId: 3  Qtde: 4      DocId: 4  Qtde: 6      
+PALAVRA: a               DocId: 1  Qtde: 43      DocId: 2  Qtde: 21      DocId: 3  Qtde: 2      DocId: 4  Qtde: 3      
+PALAVRA: abaixo          DocId: 1  Qtde: 2      
+PALAVRA: abrangente      DocId: 1  Qtde: 1      
+PALAVRA: acima           DocId: 1  Qtde: 2      
+PALAVRA: acompanhar      DocId: 1  Qtde: 1      
+PALAVRA: aderente        DocId: 1  Qtde: 1      
+PALAVRA: aderir          DocId: 1  Qtde: 1      
+PALAVRA: adora           DocId: 4  Qtde: 1      
+PALAVRA: adorada         DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: aes             DocId: 1  Qtde: 6      
+PALAVRA: agenda          DocId: 1  Qtde: 1      
+PALAVRA: ajuda           DocId: 1  Qtde: 1      
+PALAVRA: alcanado        DocId: 1  Qtde: 1      
+PALAVRA: alinhada        DocId: 2  Qtde: 1      
+PALAVRA: amada           DocId: 3  Qtde: 3      DocId: 4  Qtde: 3      
+PALAVRA: amor            DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: amores          DocId: 4  Qtde: 1      
+PALAVRA: amrica          DocId: 4  Qtde: 1      
+PALAVRA: analtica        DocId: 1  Qtde: 3      DocId: 2  Qtde: 2      
+PALAVRA: antes           DocId: 1  Qtde: 1      
+PALAVRA: antigo          DocId: 1  Qtde: 1      
+PALAVRA: ao              DocId: 1  Qtde: 4      DocId: 4  Qtde: 2      
+PALAVRA: aos             DocId: 2  Qtde: 1      
+PALAVRA: apenas          DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: aplica          DocId: 1  Qtde: 1      
+PALAVRA: aplicao         DocId: 1  Qtde: 1      
+PALAVRA: apresentar      DocId: 2  Qtde: 1      
+PALAVRA: aprovao         DocId: 1  Qtde: 1      
+PALAVRA: as              DocId: 1  Qtde: 4      DocId: 2  Qtde: 5      DocId: 3  Qtde: 1      
+PALAVRA: asentregas      DocId: 1  Qtde: 1      
+PALAVRA: aspectos        DocId: 1  Qtde: 1      
+PALAVRA: aspectosut      DocId: 1  Qtde: 1      
+PALAVRA: assegura        DocId: 1  Qtde: 1      
+PALAVRA: assegurar       DocId: 1  Qtde: 2      
+PALAVRA: assim           DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: atividades      DocId: 1  Qtde: 3      DocId: 2  Qtde: 1      
+PALAVRA: atribuir        DocId: 1  Qtde: 1      
+PALAVRA: avaliao         DocId: 1  Qtde: 1      
+PALAVRA: base            DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: bastante        DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: belo            DocId: 3  Qtde: 1      
+PALAVRA: bem             DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: benefcio        DocId: 1  Qtde: 1      
+PALAVRA: bero            DocId: 4  Qtde: 1      
+PALAVRA: boa             DocId: 1  Qtde: 1      
+PALAVRA: bom             DocId: 1  Qtde: 1      
+PALAVRA: bosques         DocId: 4  Qtde: 1      
+PALAVRA: brado           DocId: 3  Qtde: 1      
+PALAVRA: brao            DocId: 3  Qtde: 1      
+PALAVRA: brasil          DocId: 3  Qtde: 3      DocId: 4  Qtde: 4      
+PALAVRA: breakdown       DocId: 1  Qtde: 5      DocId: 2  Qtde: 2      
+PALAVRA: brilhou         DocId: 3  Qtde: 1      
+PALAVRA: cada            DocId: 1  Qtde: 2      DocId: 2  Qtde: 2      
+PALAVRA: cadastro        DocId: 2  Qtde: 1      
+PALAVRA: cairo           DocId: 1  Qtde: 1      
+PALAVRA: campos          DocId: 4  Qtde: 1      
+PALAVRA: canil           DocId: 2  Qtde: 2      
+PALAVRA: captura         DocId: 1  Qtde: 1      
+PALAVRA: capturar        DocId: 1  Qtde: 2      
+PALAVRA: caracterst      DocId: 2  Qtde: 1      
+PALAVRA: chamada         DocId: 1  Qtde: 1      
+PALAVRA: charter         DocId: 2  Qtde: 2      
+PALAVRA: cho             DocId: 1  Qtde: 1      
+PALAVRA: ciclo           DocId: 2  Qtde: 2      
+PALAVRA: claramente      DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: classes         DocId: 2  Qtde: 1      
+PALAVRA: clava           DocId: 4  Qtde: 1      
+PALAVRA: clientes        DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: cobrir          DocId: 1  Qtde: 3      
+PALAVRA: codificao       DocId: 1  Qtde: 2      
+PALAVRA: coletar         DocId: 2  Qtde: 1      
+PALAVRA: colosso         DocId: 3  Qtde: 1      
+PALAVRA: com             DocId: 1  Qtde: 6      DocId: 2  Qtde: 2      DocId: 3  Qtde: 1      
+PALAVRA: como            DocId: 1  Qtde: 9      DocId: 2  Qtde: 4      
+PALAVRA: compatvel       DocId: 1  Qtde: 1      
+PALAVRA: completa        DocId: 1  Qtde: 1      
+PALAVRA: completar       DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: completo        DocId: 1  Qtde: 1      
+PALAVRA: comprar         DocId: 1  Qtde: 4      
+PALAVRA: comum           DocId: 1  Qtde: 4      DocId: 2  Qtde: 1      
+PALAVRA: conceito        DocId: 1  Qtde: 1      
+PALAVRA: conduo          DocId: 2  Qtde: 1      
+PALAVRA: conhecido       DocId: 1  Qtde: 1      
+PALAVRA: conjunto        DocId: 2  Qtde: 1      
+PALAVRA: conquistar      DocId: 3  Qtde: 1      
+PALAVRA: conseguimo      DocId: 3  Qtde: 1      
+PALAVRA: considerar      DocId: 1  Qtde: 1      
+PALAVRA: construir       DocId: 1  Qtde: 1      
+PALAVRA: conter          DocId: 1  Qtde: 1      
+PALAVRA: contexto        DocId: 1  Qtde: 1      
+PALAVRA: contrato        DocId: 2  Qtde: 1      
+PALAVRA: controlar       DocId: 2  Qtde: 1      
+PALAVRA: controle        DocId: 1  Qtde: 1      DocId: 2  Qtde: 2      
+PALAVRA: criada          DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: criamos         DocId: 2  Qtde: 1      
+PALAVRA: criar           DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: criativas       DocId: 1  Qtde: 1      
+PALAVRA: critico         DocId: 1  Qtde: 1      
+PALAVRA: crtico          DocId: 1  Qtde: 1      
+PALAVRA: cruzeiro        DocId: 3  Qtde: 1      
+PALAVRA: cu              DocId: 3  Qtde: 2      DocId: 4  Qtde: 1      
+PALAVRA: cujo            DocId: 2  Qtde: 1      
+PALAVRA: custo           DocId: 1  Qtde: 1      
+PALAVRA: da              DocId: 1  Qtde: 18      DocId: 2  Qtde: 3      DocId: 3  Qtde: 2      DocId: 4  Qtde: 2      
+PALAVRA: daeap           DocId: 1  Qtde: 2      
+PALAVRA: daram           DocId: 2  Qtde: 1      
+PALAVRA: das             DocId: 1  Qtde: 3      DocId: 2  Qtde: 1      
+PALAVRA: de              DocId: 1  Qtde: 49      DocId: 2  Qtde: 23      DocId: 3  Qtde: 3      DocId: 4  Qtde: 1      
+PALAVRA: decimal         DocId: 1  Qtde: 1      
+PALAVRA: decomposio      DocId: 1  Qtde: 5      DocId: 2  Qtde: 1      
+PALAVRA: decoraes        DocId: 1  Qtde: 1      
+PALAVRA: deelaborao      DocId: 1  Qtde: 1      
+PALAVRA: define          DocId: 1  Qtde: 1      
+PALAVRA: definidas       DocId: 1  Qtde: 1      
+PALAVRA: definido        DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: definidos       DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: definies        DocId: 1  Qtde: 1      
+PALAVRA: definimos       DocId: 2  Qtde: 1      
+PALAVRA: definio         DocId: 2  Qtde: 1      
+PALAVRA: definir         DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: deitado         DocId: 4  Qtde: 1      
+PALAVRA: deliverabl      DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: demais          DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: dentro          DocId: 2  Qtde: 1      
+PALAVRA: deplanejam      DocId: 1  Qtde: 1      
+PALAVRA: desafia         DocId: 3  Qtde: 1      
+PALAVRA: desce           DocId: 3  Qtde: 1      
+PALAVRA: descrever       DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: desenvolvi      DocId: 1  Qtde: 3      DocId: 2  Qtde: 1      
+PALAVRA: dessa           DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: desta           DocId: 1  Qtde: 1      
+PALAVRA: destacveis      DocId: 1  Qtde: 1      
+PALAVRA: deste           DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: detalhada       DocId: 1  Qtde: 1      
+PALAVRA: detalhados      DocId: 1  Qtde: 1      
+PALAVRA: detalhe         DocId: 1  Qtde: 2      
+PALAVRA: detalhes        DocId: 1  Qtde: 2      
+PALAVRA: determinad      DocId: 2  Qtde: 2      
+PALAVRA: deve            DocId: 1  Qtde: 7      
+PALAVRA: devem           DocId: 1  Qtde: 2      
+PALAVRA: devese          DocId: 1  Qtde: 1      
+PALAVRA: dework          DocId: 1  Qtde: 1      
+PALAVRA: diga            DocId: 4  Qtde: 1      
+PALAVRA: distante        DocId: 1  Qtde: 1      
+PALAVRA: dividido        DocId: 2  Qtde: 2      
+PALAVRA: do              DocId: 1  Qtde: 37      DocId: 2  Qtde: 18      DocId: 3  Qtde: 2      DocId: 4  Qtde: 4      
+PALAVRA: doaes           DocId: 2  Qtde: 1      
+PALAVRA: documento       DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: doplanejam      DocId: 1  Qtde: 1      
+PALAVRA: dos             DocId: 1  Qtde: 12      DocId: 2  Qtde: 2      DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: dosestados      DocId: 1  Qtde: 1      
+PALAVRA: durao           DocId: 1  Qtde: 1      
+PALAVRA: e               DocId: 1  Qtde: 13      DocId: 2  Qtde: 11      DocId: 3  Qtde: 4      DocId: 4  Qtde: 3      
+PALAVRA: eap             DocId: 2  Qtde: 2      
+PALAVRA: edition         DocId: 1  Qtde: 1      
+PALAVRA: efetivo         DocId: 1  Qtde: 1      
+PALAVRA: eficientem      DocId: 1  Qtde: 1      
+PALAVRA: ela             DocId: 1  Qtde: 3      
+PALAVRA: elaborao        DocId: 1  Qtde: 3      
+PALAVRA: ele             DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: elemento        DocId: 1  Qtde: 1      
+PALAVRA: elementos       DocId: 1  Qtde: 8      DocId: 2  Qtde: 1      
+PALAVRA: em              DocId: 1  Qtde: 9      DocId: 2  Qtde: 11      DocId: 3  Qtde: 3      DocId: 4  Qtde: 1      
+PALAVRA: emgerncia       DocId: 1  Qtde: 1      
+PALAVRA: emprega         DocId: 1  Qtde: 1      
+PALAVRA: empresa         DocId: 2  Qtde: 2      
+PALAVRA: encarregad      DocId: 1  Qtde: 1      
+PALAVRA: encerramen      DocId: 2  Qtde: 1      
+PALAVRA: encontrado      DocId: 1  Qtde: 1      
+PALAVRA: entrada         DocId: 1  Qtde: 1      
+PALAVRA: entre           DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: entrega         DocId: 1  Qtde: 2      
+PALAVRA: entregar        DocId: 2  Qtde: 1      
+PALAVRA: entregas        DocId: 1  Qtde: 5      DocId: 2  Qtde: 1      
+PALAVRA: equipe          DocId: 1  Qtde: 2      DocId: 2  Qtde: 6      
+PALAVRA: ergues          DocId: 4  Qtde: 1      
+PALAVRA: escada          DocId: 1  Qtde: 1      
+PALAVRA: escopo          DocId: 1  Qtde: 4      DocId: 2  Qtde: 7      
+PALAVRA: escrito         DocId: 1  Qtde: 1      
+PALAVRA: espcie          DocId: 2  Qtde: 1      
+PALAVRA: especfica       DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: especficas      DocId: 2  Qtde: 1      
+PALAVRA: especialme      DocId: 1  Qtde: 1      
+PALAVRA: especifica      DocId: 2  Qtde: 1      
+PALAVRA: espelha         DocId: 3  Qtde: 1      
+PALAVRA: esperado        DocId: 2  Qtde: 1      
+PALAVRA: esperana        DocId: 3  Qtde: 1      
+PALAVRA: esplndido       DocId: 4  Qtde: 1      
+PALAVRA: esquema         DocId: 1  Qtde: 2      
+PALAVRA: essa            DocId: 3  Qtde: 1      
+PALAVRA: esta            DocId: 2  Qtde: 1      
+PALAVRA: estabelece      DocId: 1  Qtde: 2      
+PALAVRA: estados         DocId: 2  Qtde: 1      
+PALAVRA: estar           DocId: 1  Qtde: 1      
+PALAVRA: estas           DocId: 1  Qtde: 1      
+PALAVRA: este            DocId: 1  Qtde: 1      
+PALAVRA: estgios         DocId: 2  Qtde: 1      
+PALAVRA: estrelado       DocId: 4  Qtde: 1      
+PALAVRA: estrutura       DocId: 1  Qtde: 4      DocId: 2  Qtde: 2      
+PALAVRA: estruturad      DocId: 1  Qtde: 1      DocId: 2  Qtde: 2      
+PALAVRA: eternament      DocId: 4  Qtde: 1      
+PALAVRA: eterno          DocId: 4  Qtde: 1      
+PALAVRA: exagerado       DocId: 1  Qtde: 1      
+PALAVRA: exagere         DocId: 1  Qtde: 1      
+PALAVRA: exaustiva       DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: excedero        DocId: 1  Qtde: 1      
+PALAVRA: execuo          DocId: 1  Qtde: 1      DocId: 2  Qtde: 2      
+PALAVRA: exemplo         DocId: 1  Qtde: 5      
+PALAVRA: exigese         DocId: 1  Qtde: 1      
+PALAVRA: existente       DocId: 1  Qtde: 1      
+PALAVRA: externas        DocId: 1  Qtde: 1      
+PALAVRA: fase            DocId: 1  Qtde: 2      DocId: 2  Qtde: 8      
+PALAVRA: fases           DocId: 1  Qtde: 2      DocId: 2  Qtde: 3      
+PALAVRA: faz             DocId: 1  Qtde: 1      
+PALAVRA: feitas          DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: feitos          DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: ferramenta      DocId: 1  Qtde: 3      DocId: 2  Qtde: 3      
+PALAVRA: ficou           DocId: 2  Qtde: 1      
+PALAVRA: filho           DocId: 4  Qtde: 1      
+PALAVRA: filhos          DocId: 1  Qtde: 1      DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: finais          DocId: 1  Qtde: 2      
+PALAVRA: finalizao       DocId: 2  Qtde: 1      
+PALAVRA: firmado         DocId: 2  Qtde: 1      
+PALAVRA: fita            DocId: 1  Qtde: 1      
+PALAVRA: flgidos         DocId: 3  Qtde: 1      
+PALAVRA: flmula          DocId: 4  Qtde: 1      
+PALAVRA: flores          DocId: 4  Qtde: 1      
+PALAVRA: floro           DocId: 4  Qtde: 1      
+PALAVRA: foge            DocId: 4  Qtde: 1      
+PALAVRA: foi             DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: for             DocId: 1  Qtde: 1      
+PALAVRA: fora            DocId: 1  Qtde: 2      
+PALAVRA: forma           DocId: 1  Qtde: 5      
+PALAVRA: formalizar      DocId: 2  Qtde: 1      
+PALAVRA: formoso         DocId: 3  Qtde: 1      
+PALAVRA: fornecedor      DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: forte           DocId: 3  Qtde: 2      DocId: 4  Qtde: 1      
+PALAVRA: fulguras        DocId: 4  Qtde: 1      
+PALAVRA: funes           DocId: 1  Qtde: 1      DocId: 2  Qtde: 2      
+PALAVRA: futuro          DocId: 1  Qtde: 1      DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: garrida         DocId: 4  Qtde: 1      
+PALAVRA: gastos          DocId: 2  Qtde: 1      
+PALAVRA: gentil          DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: geral           DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: gerar           DocId: 1  Qtde: 1      
+PALAVRA: gerenciame      DocId: 1  Qtde: 1      
+PALAVRA: gerente         DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: gerir           DocId: 1  Qtde: 1      
+PALAVRA: gestores        DocId: 2  Qtde: 2      
+PALAVRA: gigante         DocId: 3  Qtde: 1      
+PALAVRA: glria           DocId: 4  Qtde: 1      
+PALAVRA: governo         DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: grandes         DocId: 1  Qtde: 2      
+PALAVRA: grandeza        DocId: 3  Qtde: 1      
+PALAVRA: granulosid      DocId: 1  Qtde: 2      
+PALAVRA: grfico          DocId: 1  Qtde: 1      
+PALAVRA: grupo           DocId: 2  Qtde: 2      
+PALAVRA: guardar         DocId: 1  Qtde: 1      
+PALAVRA: guia            DocId: 1  Qtde: 1      
+PALAVRA: h               DocId: 1  Qtde: 2      
+PALAVRA: herico          DocId: 3  Qtde: 1      
+PALAVRA: heurstica       DocId: 1  Qtde: 1      
+PALAVRA: hierarquia      DocId: 1  Qtde: 1      
+PALAVRA: hierrquica      DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: horas           DocId: 1  Qtde: 1      
+PALAVRA: identifica      DocId: 1  Qtde: 1      DocId: 2  Qtde: 2      
+PALAVRA: idias           DocId: 1  Qtde: 1      
+PALAVRA: idolatrada      DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: igual           DocId: 1  Qtde: 1      
+PALAVRA: igualdade       DocId: 3  Qtde: 1      
+PALAVRA: iluminado       DocId: 4  Qtde: 1      
+PALAVRA: imagem          DocId: 3  Qtde: 1      
+PALAVRA: imediatame      DocId: 1  Qtde: 1      
+PALAVRA: importante      DocId: 1  Qtde: 4      
+PALAVRA: impvido         DocId: 3  Qtde: 1      
+PALAVRA: incio           DocId: 2  Qtde: 2      
+PALAVRA: includo         DocId: 1  Qtde: 1      
+PALAVRA: inclui          DocId: 1  Qtde: 1      
+PALAVRA: incluir         DocId: 1  Qtde: 3      
+PALAVRA: ineficient      DocId: 1  Qtde: 1      
+PALAVRA: inferior        DocId: 1  Qtde: 1      
+PALAVRA: inglswork       DocId: 1  Qtde: 1      
+PALAVRA: iniciado        DocId: 1  Qtde: 1      
+PALAVRA: inicial         DocId: 2  Qtde: 1      
+PALAVRA: iniciao         DocId: 2  Qtde: 2      
+PALAVRA: inovadoras      DocId: 1  Qtde: 1      
+PALAVRA: instante        DocId: 3  Qtde: 1      
+PALAVRA: institutep      DocId: 1  Qtde: 1      
+PALAVRA: intenso         DocId: 3  Qtde: 1      
+PALAVRA: interessad      DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: intermedia      DocId: 1  Qtde: 1      
+PALAVRA: internas        DocId: 1  Qtde: 1      
+PALAVRA: ipiranga        DocId: 3  Qtde: 1      
+PALAVRA: ir              DocId: 1  Qtde: 1      
+PALAVRA: isto            DocId: 1  Qtde: 2      
+PALAVRA: item            DocId: 1  Qtde: 1      
+PALAVRA: jogar           DocId: 1  Qtde: 2      
+PALAVRA: jornais         DocId: 1  Qtde: 2      
+PALAVRA: justia          DocId: 4  Qtde: 1      
+PALAVRA: lbaro           DocId: 4  Qtde: 1      
+PALAVRA: lembrarse       DocId: 1  Qtde: 1      
+PALAVRA: lenis           DocId: 1  Qtde: 2      
+PALAVRA: liberdade       DocId: 3  Qtde: 2      
+PALAVRA: limite          DocId: 1  Qtde: 1      
+PALAVRA: limpar          DocId: 1  Qtde: 2      
+PALAVRA: limpeza         DocId: 1  Qtde: 1      
+PALAVRA: lindos          DocId: 4  Qtde: 1      
+PALAVRA: lmpido          DocId: 3  Qtde: 1      
+PALAVRA: luta            DocId: 4  Qtde: 1      
+PALAVRA: luz             DocId: 4  Qtde: 1      
+PALAVRA: maior           DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: mais            DocId: 1  Qtde: 11      DocId: 2  Qtde: 2      DocId: 4  Qtde: 4      
+PALAVRA: management      DocId: 1  Qtde: 1      
+PALAVRA: manejveis       DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: manter          DocId: 1  Qtde: 1      DocId: 2  Qtde: 2      
+PALAVRA: mar             DocId: 4  Qtde: 1      
+PALAVRA: margens         DocId: 3  Qtde: 1      
+PALAVRA: mas             DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: materiais       DocId: 1  Qtde: 1      
+PALAVRA: me              DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: medio           DocId: 1  Qtde: 1      
+PALAVRA: meio            DocId: 1  Qtde: 1      
+PALAVRA: melhor          DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: membros         DocId: 1  Qtde: 1      
+PALAVRA: menores         DocId: 1  Qtde: 1      
+PALAVRA: menos           DocId: 1  Qtde: 3      
+PALAVRA: mesma           DocId: 1  Qtde: 1      
+PALAVRA: meu             DocId: 2  Qtde: 1      
+PALAVRA: mil             DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: misso           DocId: 2  Qtde: 1      
+PALAVRA: monitorame      DocId: 2  Qtde: 1      
+PALAVRA: morte           DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: mos             DocId: 2  Qtde: 1      
+PALAVRA: mtodos          DocId: 1  Qtde: 1      
+PALAVRA: muito           DocId: 1  Qtde: 2      
+PALAVRA: mundo           DocId: 4  Qtde: 1      
+PALAVRA: mveis           DocId: 1  Qtde: 1      
+PALAVRA: na              DocId: 1  Qtde: 4      
+PALAVRA: natureza        DocId: 3  Qtde: 1      
+PALAVRA: necessidad      DocId: 2  Qtde: 1      
+PALAVRA: necessrio       DocId: 1  Qtde: 1      
+PALAVRA: nem             DocId: 1  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: nessa           DocId: 2  Qtde: 1      
+PALAVRA: nesse           DocId: 3  Qtde: 1      
+PALAVRA: nicos           DocId: 1  Qtde: 1      
+PALAVRA: nmero           DocId: 1  Qtde: 1      
+PALAVRA: nmeros          DocId: 1  Qtde: 1      
+PALAVRA: no              DocId: 1  Qtde: 19      DocId: 2  Qtde: 2      DocId: 3  Qtde: 1      DocId: 4  Qtde: 4      
+PALAVRA: nossa           DocId: 2  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: nosso           DocId: 2  Qtde: 1      DocId: 3  Qtde: 1      
+PALAVRA: nossos          DocId: 4  Qtde: 1      
+PALAVRA: novo            DocId: 4  Qtde: 1      
+PALAVRA: novos           DocId: 1  Qtde: 1      
+PALAVRA: numerados       DocId: 1  Qtde: 1      
+PALAVRA: nveis           DocId: 1  Qtde: 3      
+PALAVRA: nvel            DocId: 1  Qtde: 5      
+PALAVRA: o               DocId: 1  Qtde: 23      DocId: 2  Qtde: 16      DocId: 3  Qtde: 5      DocId: 4  Qtde: 2      
+PALAVRA: objetivo        DocId: 1  Qtde: 1      DocId: 2  Qtde: 2      
+PALAVRA: objetivos       DocId: 2  Qtde: 2      
+PALAVRA: obstculo        DocId: 1  Qtde: 1      
+PALAVRA: ondas           DocId: 1  Qtde: 1      
+PALAVRA: opractice       DocId: 1  Qtde: 1      
+PALAVRA: organizada      DocId: 1  Qtde: 1      
+PALAVRA: orientada       DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: orientado       DocId: 1  Qtde: 3      
+PALAVRA: orientao        DocId: 1  Qtde: 1      
+PALAVRA: os              DocId: 1  Qtde: 9      DocId: 2  Qtde: 3      
+PALAVRA: ostentas        DocId: 4  Qtde: 1      
+PALAVRA: ou              DocId: 1  Qtde: 6      DocId: 2  Qtde: 2      
+PALAVRA: outras          DocId: 1  Qtde: 1      DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: outros          DocId: 1  Qtde: 1      
+PALAVRA: ouviram         DocId: 3  Qtde: 1      
+PALAVRA: pacote          DocId: 1  Qtde: 2      
+PALAVRA: pacotep         DocId: 1  Qtde: 1      
+PALAVRA: pacotes         DocId: 1  Qtde: 1      
+PALAVRA: pai             DocId: 1  Qtde: 4      
+PALAVRA: papel           DocId: 1  Qtde: 2      
+PALAVRA: para            DocId: 1  Qtde: 26      DocId: 2  Qtde: 11      
+PALAVRA: parar           DocId: 1  Qtde: 2      
+PALAVRA: parede          DocId: 1  Qtde: 2      
+PALAVRA: parte           DocId: 1  Qtde: 4      DocId: 2  Qtde: 3      
+PALAVRA: partes          DocId: 1  Qtde: 3      DocId: 2  Qtde: 3      
+PALAVRA: participan      DocId: 1  Qtde: 1      
+PALAVRA: passado         DocId: 4  Qtde: 1      
+PALAVRA: paz             DocId: 4  Qtde: 1      
+PALAVRA: peito           DocId: 3  Qtde: 1      
+PALAVRA: pela            DocId: 2  Qtde: 1      DocId: 3  Qtde: 1      
+PALAVRA: pelas           DocId: 1  Qtde: 1      
+PALAVRA: pelo            DocId: 1  Qtde: 1      
+PALAVRA: peloescopo      DocId: 1  Qtde: 1      
+PALAVRA: peloprojec      DocId: 1  Qtde: 1      
+PALAVRA: penhor          DocId: 3  Qtde: 1      
+PALAVRA: pequena         DocId: 1  Qtde: 1      
+PALAVRA: performanc      DocId: 1  Qtde: 1      
+PALAVRA: permite         DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: permitindo      DocId: 1  Qtde: 1      
+PALAVRA: pincel          DocId: 1  Qtde: 1      
+PALAVRA: pincis          DocId: 1  Qtde: 2      
+PALAVRA: pintar          DocId: 1  Qtde: 3      
+PALAVRA: pintura         DocId: 1  Qtde: 1      
+PALAVRA: planejadas      DocId: 1  Qtde: 1      
+PALAVRA: planejamen      DocId: 1  Qtde: 1      DocId: 2  Qtde: 2      
+PALAVRA: planeje         DocId: 1  Qtde: 2      
+PALAVRA: planejveis      DocId: 1  Qtde: 1      
+PALAVRA: plano           DocId: 1  Qtde: 2      
+PALAVRA: plcidas         DocId: 3  Qtde: 1      
+PALAVRA: pneu            DocId: 1  Qtde: 1      
+PALAVRA: pode            DocId: 1  Qtde: 4      DocId: 2  Qtde: 2      
+PALAVRA: pois            DocId: 1  Qtde: 1      
+PALAVRA: por             DocId: 1  Qtde: 4      DocId: 2  Qtde: 2      
+PALAVRA: porponto        DocId: 1  Qtde: 1      
+PALAVRA: possam          DocId: 1  Qtde: 1      
+PALAVRA: possvel         DocId: 1  Qtde: 3      
+PALAVRA: povo            DocId: 3  Qtde: 1      
+PALAVRA: precisa         DocId: 2  Qtde: 1      
+PALAVRA: precisam        DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: preliminar      DocId: 1  Qtde: 2      
+PALAVRA: preparao        DocId: 1  Qtde: 2      DocId: 2  Qtde: 2      
+PALAVRA: primria         DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: principais      DocId: 2  Qtde: 1      
+PALAVRA: princpios       DocId: 1  Qtde: 3      
+PALAVRA: prioritrio      DocId: 2  Qtde: 1      
+PALAVRA: problema        DocId: 2  Qtde: 1      
+PALAVRA: produto         DocId: 2  Qtde: 1      
+PALAVRA: produtodes      DocId: 1  Qtde: 1      
+PALAVRA: produtos        DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: produzir        DocId: 1  Qtde: 1      
+PALAVRA: profission      DocId: 1  Qtde: 1      
+PALAVRA: profundo        DocId: 4  Qtde: 1      
+PALAVRA: progressiv      DocId: 1  Qtde: 5      
+PALAVRA: progresso       DocId: 1  Qtde: 1      
+PALAVRA: project         DocId: 2  Qtde: 2      
+PALAVRA: projetado       DocId: 1  Qtde: 1      
+PALAVRA: projetista      DocId: 1  Qtde: 1      
+PALAVRA: projeto         DocId: 1  Qtde: 25      DocId: 2  Qtde: 23      
+PALAVRA: projetoe        DocId: 1  Qtde: 1      
+PALAVRA: projetos        DocId: 1  Qtde: 2      
+PALAVRA: projetosea      DocId: 1  Qtde: 1      
+PALAVRA: proposto        DocId: 1  Qtde: 1      
+PALAVRA: prov            DocId: 1  Qtde: 1      
+PALAVRA: prpria          DocId: 3  Qtde: 2      DocId: 4  Qtde: 1      
+PALAVRA: ptria           DocId: 3  Qtde: 4      DocId: 4  Qtde: 3      
+PALAVRA: publicado       DocId: 1  Qtde: 1      
+PALAVRA: qual            DocId: 1  Qtde: 4      
+PALAVRA: qualquer        DocId: 1  Qtde: 4      
+PALAVRA: quando          DocId: 1  Qtde: 3      DocId: 2  Qtde: 1      
+PALAVRA: que             DocId: 1  Qtde: 16      DocId: 2  Qtde: 6      DocId: 4  Qtde: 3      
+PALAVRA: quebra          DocId: 1  Qtde: 1      
+PALAVRA: quebrlo         DocId: 1  Qtde: 1      
+PALAVRA: quem            DocId: 4  Qtde: 1      
+PALAVRA: questo          DocId: 1  Qtde: 1      
+PALAVRA: raio            DocId: 3  Qtde: 1      
+PALAVRA: raios           DocId: 3  Qtde: 1      
+PALAVRA: rastreamen      DocId: 1  Qtde: 1      
+PALAVRA: rastrear        DocId: 1  Qtde: 1      
+PALAVRA: realidade       DocId: 1  Qtde: 1      
+PALAVRA: realizado       DocId: 2  Qtde: 1      
+PALAVRA: realizao        DocId: 1  Qtde: 1      
+PALAVRA: reas            DocId: 1  Qtde: 1      
+PALAVRA: reconhecid      DocId: 1  Qtde: 1      
+PALAVRA: recursos        DocId: 2  Qtde: 1      
+PALAVRA: refinados       DocId: 1  Qtde: 1      
+PALAVRA: regra           DocId: 1  Qtde: 10      
+PALAVRA: regras          DocId: 1  Qtde: 1      
+PALAVRA: regular         DocId: 1  Qtde: 1      
+PALAVRA: relao           DocId: 2  Qtde: 1      
+PALAVRA: remanescen      DocId: 1  Qtde: 1      
+PALAVRA: remoo           DocId: 1  Qtde: 2      
+PALAVRA: removedor       DocId: 1  Qtde: 1      
+PALAVRA: remover         DocId: 1  Qtde: 1      
+PALAVRA: representa      DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: requerimen      DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: requisitos      DocId: 2  Qtde: 1      
+PALAVRA: resolues        DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: resolvido       DocId: 2  Qtde: 1      
+PALAVRA: resplandec      DocId: 3  Qtde: 1      
+PALAVRA: respondida      DocId: 1  Qtde: 1      
+PALAVRA: responsabi      DocId: 1  Qtde: 1      
+PALAVRA: responsvel      DocId: 2  Qtde: 1      
+PALAVRA: resultado       DocId: 2  Qtde: 1      
+PALAVRA: resultados      DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: retumbante      DocId: 3  Qtde: 1      
+PALAVRA: revelar         DocId: 1  Qtde: 1      
+PALAVRA: reviso          DocId: 1  Qtde: 2      
+PALAVRA: riscos          DocId: 1  Qtde: 1      
+PALAVRA: risonho         DocId: 3  Qtde: 1      
+PALAVRA: risonhos        DocId: 4  Qtde: 1      
+PALAVRA: rodaps          DocId: 1  Qtde: 1      
+PALAVRA: rolo            DocId: 1  Qtde: 1      
+PALAVRA: rolos           DocId: 1  Qtde: 2      
+PALAVRA: rvore           DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: s               DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      DocId: 3  Qtde: 4      DocId: 4  Qtde: 2      
+PALAVRA: sada            DocId: 1  Qtde: 1      
+PALAVRA: sadas           DocId: 1  Qtde: 1      
+PALAVRA: saia            DocId: 1  Qtde: 1      
+PALAVRA: sala            DocId: 1  Qtde: 4      DocId: 2  Qtde: 1      
+PALAVRA: salve           DocId: 3  Qtde: 2      DocId: 4  Qtde: 2      
+PALAVRA: satisfatri      DocId: 1  Qtde: 1      
+PALAVRA: se              DocId: 1  Qtde: 8      DocId: 2  Qtde: 1      DocId: 3  Qtde: 2      DocId: 4  Qtde: 1      
+PALAVRA: second          DocId: 1  Qtde: 1      
+PALAVRA: segue           DocId: 1  Qtde: 1      
+PALAVRA: seguintes       DocId: 2  Qtde: 1      
+PALAVRA: seguir          DocId: 1  Qtde: 1      
+PALAVRA: seio            DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: seja            DocId: 1  Qtde: 2      DocId: 4  Qtde: 1      
+PALAVRA: sejam           DocId: 1  Qtde: 2      
+PALAVRA: sendo           DocId: 1  Qtde: 1      
+PALAVRA: senso           DocId: 1  Qtde: 1      
+PALAVRA: separadas       DocId: 1  Qtde: 1      
+PALAVRA: separados       DocId: 1  Qtde: 1      
+PALAVRA: sequencial      DocId: 1  Qtde: 1      
+PALAVRA: ser             DocId: 1  Qtde: 14      DocId: 2  Qtde: 4      
+PALAVRA: serem           DocId: 1  Qtde: 3      DocId: 2  Qtde: 1      
+PALAVRA: serve           DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: servio          DocId: 2  Qtde: 1      
+PALAVRA: servios         DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: seu             DocId: 2  Qtde: 1      
+PALAVRA: similar         DocId: 1  Qtde: 1      
+PALAVRA: simples         DocId: 1  Qtde: 1      
+PALAVRA: smbolo          DocId: 4  Qtde: 1      
+PALAVRA: so              DocId: 1  Qtde: 3      DocId: 2  Qtde: 1      
+PALAVRA: sobrou          DocId: 1  Qtde: 1      
+PALAVRA: sol             DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: solo            DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: som             DocId: 4  Qtde: 1      
+PALAVRA: soma            DocId: 1  Qtde: 2      
+PALAVRA: sonho           DocId: 3  Qtde: 1      
+PALAVRA: standard        DocId: 1  Qtde: 1      
+PALAVRA: structure       DocId: 1  Qtde: 2      DocId: 2  Qtde: 2      
+PALAVRA: structurep      DocId: 1  Qtde: 1      
+PALAVRA: structures      DocId: 1  Qtde: 1      
+PALAVRA: structurew      DocId: 1  Qtde: 1      
+PALAVRA: sua             DocId: 2  Qtde: 1      
+PALAVRA: subdividem      DocId: 1  Qtde: 1      
+PALAVRA: subdividid      DocId: 1  Qtde: 1      DocId: 2  Qtde: 3      
+PALAVRA: subdiviso       DocId: 2  Qtde: 1      
+PALAVRA: sucessivas      DocId: 1  Qtde: 1      
+PALAVRA: suficiente      DocId: 1  Qtde: 2      
+PALAVRA: tais            DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: tambm           DocId: 1  Qtde: 3      
+PALAVRA: tarefas         DocId: 2  Qtde: 1      
+PALAVRA: tcnica          DocId: 1  Qtde: 3      
+PALAVRA: te              DocId: 4  Qtde: 1      
+PALAVRA: tem             DocId: 2  Qtde: 1      
+PALAVRA: teme            DocId: 4  Qtde: 1      
+PALAVRA: tempo           DocId: 1  Qtde: 1      
+PALAVRA: tenta           DocId: 1  Qtde: 1      
+PALAVRA: terminais       DocId: 1  Qtde: 2      DocId: 2  Qtde: 1      
+PALAVRA: termo           DocId: 1  Qtde: 1      
+PALAVRA: termos          DocId: 1  Qtde: 1      
+PALAVRA: terra           DocId: 3  Qtde: 2      DocId: 4  Qtde: 2      
+PALAVRA: teu             DocId: 3  Qtde: 3      DocId: 4  Qtde: 2      
+PALAVRA: teus            DocId: 4  Qtde: 1      
+PALAVRA: tinta           DocId: 1  Qtde: 2      
+PALAVRA: tm              DocId: 2  Qtde: 1      DocId: 4  Qtde: 2      
+PALAVRA: toda            DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: todas           DocId: 1  Qtde: 2      
+PALAVRA: todo            DocId: 2  Qtde: 1      
+PALAVRA: todos           DocId: 1  Qtde: 2      
+PALAVRA: tomadas         DocId: 1  Qtde: 1      
+PALAVRA: tornar          DocId: 1  Qtde: 2      
+PALAVRA: total           DocId: 2  Qtde: 1      
+PALAVRA: trabalho        DocId: 1  Qtde: 18      DocId: 2  Qtde: 4      
+PALAVRA: trabalhooc      DocId: 1  Qtde: 1      
+PALAVRA: transforma      DocId: 2  Qtde: 1      
+PALAVRA: transio         DocId: 2  Qtde: 1      
+PALAVRA: traseiroid      DocId: 1  Qtde: 1      
+PALAVRA: tu              DocId: 3  Qtde: 1      DocId: 4  Qtde: 1      
+PALAVRA: um              DocId: 1  Qtde: 15      DocId: 2  Qtde: 10      DocId: 3  Qtde: 3      DocId: 4  Qtde: 1      
+PALAVRA: uma             DocId: 1  Qtde: 17      DocId: 2  Qtde: 6      
+PALAVRA: umaestrutu      DocId: 1  Qtde: 2      
+PALAVRA: umpacote        DocId: 1  Qtde: 1      
+PALAVRA: umprojeto       DocId: 1  Qtde: 1      
+PALAVRA: unidos          DocId: 2  Qtde: 1      
+PALAVRA: unidostm        DocId: 1  Qtde: 1      
+PALAVRA: usar            DocId: 1  Qtde: 1      
+PALAVRA: uso             DocId: 1  Qtde: 1      
+PALAVRA: vale            DocId: 1  Qtde: 1      
+PALAVRA: validaes        DocId: 2  Qtde: 1      
+PALAVRA: velhos          DocId: 1  Qtde: 1      
+PALAVRA: verdelouro      DocId: 4  Qtde: 1      
+PALAVRA: verificar       DocId: 2  Qtde: 1      
+PALAVRA: vers            DocId: 4  Qtde: 1      
+PALAVRA: vez             DocId: 2  Qtde: 1      
+PALAVRA: vida            DocId: 2  Qtde: 2      DocId: 4  Qtde: 2      
+PALAVRA: viso            DocId: 1  Qtde: 1      
+PALAVRA: vrias           DocId: 1  Qtde: 1      DocId: 2  Qtde: 1      
+PALAVRA: vvido           DocId: 3  Qtde: 1      
+PALAVRA: wbs             DocId: 1  Qtde: 28      DocId: 2  Qtde: 5      
+PALAVRA: work            DocId: 1  Qtde: 3      DocId: 2  Qtde: 2      
