@@ -1,3 +1,6 @@
+// Autor: Charles Garrocho
+// Data: 10/04/2012
+
 #include <stdio.h>
 #include "funcoes.h"
 #include <stdlib.h>

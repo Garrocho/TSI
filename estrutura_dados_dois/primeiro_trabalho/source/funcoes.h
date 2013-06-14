@@ -1,3 +1,6 @@
+// Autor: Charles Garrocho
+// Data: 10/04/2012
+
 #ifndef FUNCOES_H
 #define FUNCOES_H
 

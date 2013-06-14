@@ -1,3 +1,6 @@
+// Autor: Charles Garrocho
+// Data: 10/04/2012
+
 #ifndef TABELA_HASH_H
 #define TABELA_HASH_H
 

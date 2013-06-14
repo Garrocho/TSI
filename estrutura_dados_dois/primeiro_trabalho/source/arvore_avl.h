@@ -1,3 +1,6 @@
+// Autor: Charles Garrocho
+// Data: 10/04/2012
+
 #ifndef ARVORE_AVL_H
 #define ARVORE_AVL_H
 

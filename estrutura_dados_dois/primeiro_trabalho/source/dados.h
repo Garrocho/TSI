@@ -1,3 +1,6 @@
+// Autor: Charles Garrocho
+// Data: 10/04/2012
+
 #ifndef DADOS_H
 #define DADOS_H
 
