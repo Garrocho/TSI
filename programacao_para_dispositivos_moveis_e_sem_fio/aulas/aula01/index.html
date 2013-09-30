@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Aula 1 - Revisão</title>
+        <link rel="shortcut icon" href="static/img/favicon.ico" />
+        <link rel="stylesheet" href="static/css/style.css">
+       
+    </head>
+    <body>
+        <!-- Comentário -->
+        
+        <h1>Cabeçalho de Nível 1</h1>
+        <h6>Cabeçalho de Nível 6</h6>
+        
+        <div id="vermelho" onclick="alert('cliclou');">Bloco 1 (DIV)</div>
+        <div>Bloco 2 (DIV)</div>
+        
+        <span id="azul" class="azul">Bloco 1 (SPAN)</span>
+        <span class="verde">Bloco 2 (SPAN)</span>
+        
+        <form method="GET" action="controller/processa">
+            <strong>Nome:</strong>
+            <input type="text" name="frm_nome" id="frm_nome" placeholder="Nome Completo" />
+            
+            </br>
+            <label for="frm_mem">Memoriazar Nome</label>
+            <input id="frm_mem" type="checkbox">
+        </form>
+        
+        <select id="turno" multiple="multiple">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+        
+        <button onClick="trocarCor();">Alterar BG BLOCO 1</button>
+        <script src="static/js/script.js"></script>
+    </body>
+</html>
