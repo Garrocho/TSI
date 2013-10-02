@@ -1,0 +1,25 @@
+span {
+    color:#FFFF00;
+    margin: 15px 10px 15px 10px;
+    padding: 2px;
+}
+
+span.verde {
+    background-color: green;
+}
+
+span.azul {
+    background-color: blue;
+    width: 400px;
+    cursor:pointer;
+}
+
+div#vermelho {
+    background-color: red;
+    width: 300px;
+    float: left;
+}
+
+body {
+    background-image: url('../img/brasil.jpeg') ;
+}
