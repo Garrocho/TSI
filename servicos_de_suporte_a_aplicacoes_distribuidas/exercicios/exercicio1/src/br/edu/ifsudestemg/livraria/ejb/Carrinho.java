@@ -1,13 +1,13 @@
 package br.edu.ifsudestemg.livraria.ejb;
 
-import java.awt.List;
+import java.util.List;
 
 import br.edu.ifsudestemg.livraria.modelo.Livro;
 
 public interface Carrinho {
 	
 	void addLivro(Livro livro);
-	List getLivros();
+	List<Livro> getLivros();
 	double getTotal();
 	void finalizaCompra();
 
