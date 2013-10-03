@@ -1,10 +1,16 @@
 package br.edu.ifsudestemg.livraria.ejb;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
+
+import javax.ejb.Stateless;
+
+import org.jboss.annotation.ejb.RemoteBinding;
 
 import br.edu.ifsudestemg.livraria.modelo.Livro;
 
+@Stateless
+@RemoteBinding(jndiBinding="ssadlivraria")
 public class CarrinhoBean implements Carrinho {
 	
 	private List<Livro> livros = new ArrayList<Livro>();
