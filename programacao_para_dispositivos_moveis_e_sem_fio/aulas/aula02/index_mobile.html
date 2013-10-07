@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Aula 2 - Mobile</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
+    </head>
+    <body>
+        <div data-role="page" id="tela-1">
+            <div data-role="header">
+                Meu Aplicativo 0.1
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#tela-1">Tela 1</a></li>
+		                <li><a href="#tela-2">Tela 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div data-role="content">
+                <h1>Tela 1</h1>
+                <p>Tela 1</p>
+                <a href="#tela-2">Tela 2</a>
+                <hr/>
+                <div data-role="collapsible">
+                    <h1>teste</h1>
+                    <p>Conteúdo</p>
+                </div>
+                <ul data-role="listview" data-inset="true" data-theme="e" >
+                    <li data-role="list-divider">
+                        <a href="#">IF Sudeste MG</a>
+                    </li>
+                    <li>Barbacena</li>
+                    <li>Juiz de Fora</li>
+                    <li>Muriaé</li>
+                    <li data-role="list-divider">
+                        <a href="#">IF Sul MG</a>
+                    </li>
+                    <li>Muzambinho</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div data-role="page" id="tela-2">
+            <div data-role="header">
+                Meu Aplicativo 0.1
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#tela-1">Tela 1</a></li>
+		                <li><a href="#tela-2">Tela 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div data-role="content">
+                <h1>Tela 2</h1>
+                <p>Tela 2</p>
+                <div>
+                    <input type="range" value="20" max="100" min="0"></input>
+                    <a href="#tela-1" data-role="button" data-icon="back"> Acessar Tela 1</a>
+                    <a href="#tela-1" data-role="button" data-inline="true"> Acessar Tela 1 Menor</a>
+                </div>
+            </div>
+        </div>
+    
+        <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    </body>
+</html>
