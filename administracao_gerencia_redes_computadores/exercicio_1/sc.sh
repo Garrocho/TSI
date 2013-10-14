@@ -7,5 +7,6 @@ do
    descricao=`echo $linha | cut -d ':' -f 3`
    matricula=`echo $linha | cut -d ':' -f 4`
    senha=`echo $linha | cut -d ':' -f 5`
+   dir_pai=`echo $nome_usuario | cut -b 1`
 
 done < user_pass.txt
