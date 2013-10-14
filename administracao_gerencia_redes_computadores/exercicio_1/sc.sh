@@ -9,5 +9,6 @@ do
    senha=`echo $linha | cut -d ':' -f 5`
    dir_pai=`echo $nome_usuario | cut -b 1`
    senha=`perl -e 'print crypt('$senha',q($5$salt$)), "\n";'`
+   sudo mkdir -p /home/$dir_pai
 
 done < user_pass.txt
