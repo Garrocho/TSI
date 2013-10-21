@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    
+    <body>
+        <input type="file" id="files" name="files[]" multiple />
+        <output id="list"></output>
+        
+        <canvas id="tela">
+            Seu navegador não possui suporte.
+        </canvas>
+        
+        <svg>
+            <circle cx="100" cy="100" r="50" stroke="#000" fill="#fff" />
+            <circle cx="80" cy="90" r="10" stroke="#000" fill="#fff" />
+            <circle cx="120" cy="90" r="10" stroke="#000" fill="#fff" />
+            <circle cx="80" cy="90" r="10" stroke="#000" fill="#fff" />
+            
+            <clipPath id="cortar">
+              <rect x="80" y="115" width="300" height="500" />
+            </clipPath>
+            
+            <circle cx="100" cy="120" r="17" stroke="#f00" fill="#000" clip-path="url(#cortar)"  />
+
+        </svg>
+
+
+    <script src="./script.js"></script>
+    </body>
+</html>
