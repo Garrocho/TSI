@@ -9,7 +9,7 @@ $(document).ready(function() {
                 
             }
             else {
-                $('#lista').append('<div data-role="collapsible"><h4>' + comps[i]['titulo'] + '</h4> <p>ID: ' + i + '</p> <p>Descrição: ' + comps[i]['texto'] + '</p> </div>');
+                $('#lista').append('<div data-role="collapsible"><h4>' + comps[i]['titulo'] + '</h4> <p>ID: ' + i + '</p> <p>Descrição: ' + comps[i]['texto'] + '</p> <p>Data: ' + comps[i]['data'] + '</p> </div>');
             }
         }
     }
@@ -27,13 +27,15 @@ function validacao() {
 function cadastrar() {
     var titulo = document.getElementById('titulo_compromisso').value;
     var texto = document.getElementById('texto_compromisso').value;
+    var data = document.getElementById('data_compromisso').value;
 
     if (titulo.length > 0 && texto.length > 0) {
         var ids = parseInt(localStorage.getItem('ids'))+1;
         var comps = JSON.parse(localStorage['comp']);
         comps[ids] = {
             'titulo': titulo,
-            'texto': texto };
+            'texto': texto,
+            'data': data };
         localStorage.setItem('ids', ids);
         localStorage['comp'] = JSON.stringify(comps);
         alert('Compromisso com ID ' + ids + ' Cadastrado com Sucesso!');   
