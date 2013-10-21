@@ -46,6 +46,32 @@ function cadastrar() {
     }
 }
 
+function data_atual_formatada() {
+    var data = new Date();
+    var dia = data.getDate();
+    var mes = data.getMonth();
+    var ano4 = data.getFullYear();
+    return ano4 + '-' + (mes+1) + '-' + dia;
+}
+
+function listar_por_data() {
+    var data_atual = data_atual_formatada();
+    document.getElementById('lista').innerHTML="";
+    var ids = parseInt(localStorage.getItem('ids'))+1;
+    var comps = JSON.parse(localStorage['comp']);
+    var i;
+    for (i=0; i <= ids; i++) {
+        if (typeof comps[i] === 'undefined') {
+            
+        }
+        else {
+            if (comps[i]['data'] === data_atual) {
+                $('#lista').append('<div data-role="collapsible"><h4>' + comps[i]['titulo'] + '</h4> <p>ID: ' + i + '</p> <p>Descrição: ' + comps[i]['texto'] + '</p> <p>Data: ' + comps[i]['data'] + '</p> </div>');
+            }
+        }
+    }
+}
+
 function deletar() {
    var id_comp = document.getElementById('id_compromisso').value;
    if (id_comp.length > 0) {
