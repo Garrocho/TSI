@@ -1,16 +1,7 @@
 $(document).ready(function() {
+    validacao();
     var ids = localStorage.getItem('ids');
-    if (ids == null) {
-        ids = 0;
-        localStorage.setItem('ids', ids);
-        var comp = {};
-        comp[ids] = {
-            'titulo': 'Reunião Importante',
-            'texto': 'reuniao com os conselheiros...' };
-        localStorage['comp'] = JSON.stringify(comp);
-        $('#lista').append('<div data-role="collapsible"><h4>' + comps[0]['titulo'] + '</h4> <p>' + comps[0]['texto'] + '</p> </div>');
-    }
-    else {
+    if (ids != null) {
         var comps = JSON.parse(localStorage.getItem('comp'));
         var i;
         for (i=0; i <= ids; i++) {
@@ -24,6 +15,15 @@ $(document).ready(function() {
     }
 });
 
+function validacao() {
+    var ids = localStorage.getItem('ids');
+    if (ids == null) {
+        localStorage.setItem('ids', 0);
+        var comps = {};
+        localStorage['comp'] = JSON.stringify(comps);
+    }
+}
+
 function cadastrar() {
     var titulo = document.getElementById('titulo_compromisso').value;
     var texto = document.getElementById('texto_compromisso').value;
@@ -36,7 +36,8 @@ function cadastrar() {
             'texto': texto };
         localStorage.setItem('ids', ids);
         localStorage['comp'] = JSON.stringify(comps);
-        $('#lista').append('<div data-role="collapsible"><h4>' + comps[ids]['titulo'] + '</h4> <p>' + comps[ids]['texto'] + '</p> </div>');
+        alert('Compromisso com ID ' + ids + ' Cadastrado com Sucesso!');   
+        window.location.href = 'index.html';
     }
     else {
         alert('Preencha Todos Os Campos do Cadastro de Compromissos!');
@@ -60,4 +61,11 @@ function deletar() {
     else {
         alert('Preencha o Campo com o ID a ser excluído!');
     }
+}
+
+function deletar_tudo() {
+    localStorage.removeItem('comp');
+    localStorage.removeItem('ids');
+    alert('Todos os Compromissos Deletados com Sucesso!');   
+    window.location.href = 'index.html';
 }
