@@ -14,13 +14,20 @@
             </div>
           
             <div data-role="content" >
-            
+
                 <fieldset data-role="collapsible" data-theme="a" data-content-theme="d">
                     <legend>Adicionar Compromisso</legend>
-                    <label for="textinput-f">Título</label>
-                    <input name="ti_c" id="titulo_compromisso" placeholder="Título do Compromisso" value="" type="text">
-                    <label for="textinput-f">Descrição</label>
-                    <input name="te_c" id="texto_compromisso" placeholder="Descrição do Compromisso" value="" type="text">
+
+                    <div data-role="fieldcontain">
+                        <label for="ti_c" class="ui-input-text">Título:</label>
+                        <input name="ti_c" id="titulo_compromisso" placeholder="Título do Compromisso" value="" type="text">
+                    </div>
+                    
+                    <div data-role="fieldcontain">
+                        <label for="te_c" class="ui-input-text">Descrição:</label>
+                        <input name="te_c" id="texto_compromisso" placeholder="Descrição do Compromisso" value="" type="text">
+                    </div>
+
                     <button onclick="cadastrar()" data-role="button" data-inline="true" data-theme="b">Salvar</button>
                 </fieldset>
 
@@ -28,10 +35,15 @@
 
                 <fieldset data-role="collapsible" data-theme="a" data-content-theme="d">
                     <legend>Deletar Compromisso</legend>
-                    <label for="textinput-f">ID</label>
-                    <input name="id_c" id="id_compromisso" placeholder="Id do Compromisso" value="" type="text">
+
+                    <div data-role="fieldcontain">
+                        <label for="ti_c" class="ui-input-text">ID:</label>
+                        <input name="id_c" id="id_compromisso" placeholder="Id do Compromisso" value="" type="text">
+                    </div>
+
                     <button onclick="deletar()" data-role="button" data-inline="true" data-theme="b">Deletar</button>
                     <button onclick="deletar_tudo()" data-role="button" data-inline="true" data-theme="b">Deletar Tudo</button>
+                    
                 </fieldset>
             
             <br>
