@@ -1,5 +1,10 @@
 $(document).ready(function() {
     validacao();
+    limpar_busca();
+});
+
+function limpar_busca() {
+    document.getElementById("lista").innerHTML="";
     var ids = localStorage.getItem('ids');
     if (ids != null) {
         var comps = JSON.parse(localStorage.getItem('comp'));
@@ -13,7 +18,7 @@ $(document).ready(function() {
             }
         }
     }
-});
+}
 
 function validacao() {
     var ids = localStorage.getItem('ids');
@@ -70,6 +75,7 @@ function listar_por_data() {
             }
         }
     }
+    $('#lista').listview('refresh');
 }
 
 function deletar() {
