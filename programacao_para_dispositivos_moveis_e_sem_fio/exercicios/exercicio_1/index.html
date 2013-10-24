@@ -3,20 +3,20 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Meus Compromissos</title>
+        <title>MyCompromise</title>
         <link rel="stylesheet" href="./static/css/jquery.mobile-1.3.2.min.css"/>
     </head>
     <body>
     
         <div data-role="page">        
             <div data-role="header" data-theme="b">
-                <h1>Meus Compromissos</h1>
+                <h1>MyCompromise</h1>
             </div>
           
             <div data-role="content" >
 
-                <fieldset data-role="collapsible" data-theme="a" data-content-theme="d">
-                    <legend>Adicionar Compromisso</legend>
+                <div data-role="collapsible" data-theme="a" data-content-theme="d" data-inline="true">
+                    <legend>Adicionar</legend>
 
                     <div data-role="fieldcontain">
                         <label for="ti_c" class="ui-input-text">Título:</label>
@@ -34,33 +34,29 @@
                     </div>
 
                     <button onclick="cadastrar()" data-role="button" data-inline="true" data-theme="b">Salvar</button>
-                </fieldset>
+                </div>
 
-                <br>
-
-                <fieldset data-role="collapsible" data-theme="a" data-content-theme="d">
-                    <legend>Deletar Compromissos</legend>
+                <div data-role="collapsible" data-theme="a" data-content-theme="d" data-inline="true">
+                    <legend>Deletar</legend>
 
                     <div data-role="fieldcontain">
                         <label for="ti_c" class="ui-input-text">ID:</label>
                         <input name="id_c" id="id_compromisso" placeholder="Id do Compromisso" value="" type="text">
                     </div>
 
-                    <button onclick="deletar()" data-role="button" data-inline="true" data-theme="b">Deletar</button>
+                    <button onclick="deletar()" data-role="button" data-inline="true" data-theme="b">Deletar Item</button>
                     <button onclick="deletar_tudo()" data-role="button" data-inline="true" data-theme="b">Deletar Tudo</button>
                     
-                </fieldset>
+                </div>
             
-            <br>
-            
-            <button onclick="listar_por_data()" data-role="button" data-inline="true" data-theme="b">Lista Todos Compromissos de Hoje</button>
+                <button onclick="listar_por_data()" data-role="button" data-inline="true" data-theme="b">Todos de Hoje</button>
 
-            <button onclick="limpar_busca()" data-role="button" data-inline="true" data-theme="e">Limpar Busca</button>
-            
-            <br>
-            <br>
+                <button id="limpar" onclick="limpar_busca()" stylesheet="visibility:hidden" data-role="button" data-inline="true" data-theme="e">Limpar Busca</button>
+                
+                <br>
+                <br>
 
-            <ul id="lista" data-filter-placeholder="Pesquisar Compromissos" data-role="listview" data-filter="true" data-inset="true"></ul>
+                <ul id="lista" data-filter-placeholder="Pesquisar Compromissos" data-role="listview" data-filter="true" data-inset="true"></ul>
             </div>
         </div>
         
