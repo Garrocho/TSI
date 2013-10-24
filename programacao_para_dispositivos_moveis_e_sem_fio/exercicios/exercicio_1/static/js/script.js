@@ -14,7 +14,7 @@ function limpar_busca() {
                 
             }
             else {
-                $('#lista').append('<div data-role="collapsible"><h4>' + comps[i]['titulo'] + '</h4> <p>ID: ' + i + '</p> <p>Descrição: ' + comps[i]['texto'] + '</p> <p>Data: ' + comps[i]['data'] + '</p> </div>');
+                $('#lista').append('<div data-role="collapsible"><h4>' + comps[i]['titulo'] + '</h4> <p>ID: ' + i + '</p> <p>Descrição: ' + comps[i]['texto'] + '</p> <p>Data: ' + comps[i]['data'] + '</p> </div>').trigger('create');
             }
         }
     }
@@ -71,11 +71,10 @@ function listar_por_data() {
         }
         else {
             if (comps[i]['data'] === data_atual) {
-                $('#lista').append('<div data-role="collapsible"><h4>' + comps[i]['titulo'] + '</h4> <p>ID: ' + i + '</p> <p>Descrição: ' + comps[i]['texto'] + '</p> <p>Data: ' + comps[i]['data'] + '</p> </div>');
+                $('#lista').append('<div data-role="collapsible"><h4>' + comps[i]['titulo'] + '</h4> <p>ID: ' + i + '</p> <p>Descrição: ' + comps[i]['texto'] + '</p> <p>Data: ' + comps[i]['data'] + '</p> </div>').trigger('create');
             }
         }
     }
-    $('#lista').listview('refresh');
 }
 
 function deletar() {
