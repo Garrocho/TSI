@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence">
+
+<persistence-unit name="p1" transaction-type="JTA">
+<jta-data-source>java:/MYSQLDS</jta-data-source>
+<class>Livro</class>     
+<properties>       
+	<property name="hibernate.hbm2ddl.auto" value="update" />
+	<property name="hibernate.show_sql" value="true"/> 
+</properties>
+</persistence-unit>
+</persistence> 
