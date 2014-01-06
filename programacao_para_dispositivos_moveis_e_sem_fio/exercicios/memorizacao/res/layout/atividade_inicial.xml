@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AtividadeInicial" >
+
+    <TextView
+        android:id="@+id/atividade_inicial_rotulo_progresso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/progresso"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ProgressBar
+        android:id="@+id/atividade_inicial_barra_progresso"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/atividade_inicial_rotulo_progresso" />
+
+    <ImageView
+        android:id="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="reiniciar"
+        android:src="@drawable/reiniciar" />
+
+    <ImageView
+        android:id="@+id/atividade_inicial_imagem_um"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_below="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_marginTop="60dp"
+        android:onClick="um"
+        android:src="@drawable/um" />
+
+    <ImageView
+        android:id="@+id/atividade_inicial_imagem_tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_below="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_marginTop="130dp"
+        android:onClick="tres"
+        android:src="@drawable/tres" />
+
+    <ImageView
+        android:id="@+id/atividade_inicial_imagem_quatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_below="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_marginTop="130dp"
+        android:onClick="quatro"
+        android:src="@drawable/quatro" />
+
+    <ImageView
+        android:id="@+id/atividade_inicial_imagem_cinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_below="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_marginTop="200dp"
+        android:onClick="cinco"
+        android:src="@drawable/cinco" />
+
+    <ImageView
+        android:id="@+id/atividade_inicial_imagem_seis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_below="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_marginTop="200dp"
+        android:onClick="seis"
+        android:src="@drawable/seis" />
+
+    <ImageView
+        android:id="@+id/atividade_inicial_imagem_dois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_below="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_marginTop="60dp"
+        android:onClick="dois"
+        android:src="@drawable/dois" />
+
+</RelativeLayout>
