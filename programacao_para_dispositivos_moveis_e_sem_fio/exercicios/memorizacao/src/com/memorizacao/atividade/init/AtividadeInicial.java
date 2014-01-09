@@ -11,6 +11,8 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
@@ -69,14 +71,24 @@ public class AtividadeInicial extends Activity {
 	}
 
 	public void reiniciar(View componente) {
+		RotateAnimation anim = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+		anim.setInterpolator(new LinearInterpolator());
+		anim.setDuration(500);
+
+		final ImageView compReiniciar = (ImageView) findViewById(R.id.atividade_inicial_imagem_reiniciar);
+		compReiniciar.startAnimation(anim);
+		
 		progresso = 0;
 		barraProgresso.setProgress(progresso);
 		restauraComponente(um);
 		restauraComponente(dois);
+		
 		restauraComponente(tres);
 		restauraComponente(quatro);
 		restauraComponente(cinco);
 		restauraComponente(seis);
+		cinco.setVisibility(View.VISIBLE);
+		seis.setVisibility(View.VISIBLE);
 		background.setBackgroundColor(Color.WHITE);
 		vetorSequencias = gerarSequencia();
 	}
@@ -94,7 +106,7 @@ public class AtividadeInicial extends Activity {
 		componente.setEnabled(false);
 		Animation fadeOut = new AlphaAnimation(1, 0);
 	    fadeOut.setInterpolator(new AccelerateInterpolator());
-	    fadeOut.setDuration(1500);
+	    fadeOut.setDuration(1000);
 	    componente.setAnimation(fadeOut);
 		progresso += 17;
 		barraProgresso.setProgress(progresso);
