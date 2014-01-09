@@ -15,26 +15,38 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.memorizacao.R;
 
 public class AtividadeInicial extends Activity {
 
 	private ProgressBar barraProgresso;
-	private ImageView um, dois, tres, quatro, cinco, seis;
-	private int progresso;
+	private ImageView reiniciar, um, dois, tres, quatro, cinco, seis;
+	private int progresso, contador;
 	private View background;
+	private TextView rotuloParabens, rotuloVoceTem, rotuloProgresso;
 	private int[] vetorSequencias;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.atividade_inicial);
+		
+		reiniciar = (ImageView)findViewById(R.id.atividade_inicial_imagem_reiniciar);
 
+		rotuloParabens = (TextView)findViewById(R.id.atividade_inicial_rotulo_parabens);
+		rotuloVoceTem = (TextView)findViewById(R.id.atividade_inicial_rotulo_voce_tem);
+		rotuloProgresso = (TextView)findViewById(R.id.atividade_inicial_rotulo_progresso);
+		
+		rotuloParabens.setVisibility(View.GONE);
+		rotuloVoceTem.setVisibility(View.GONE);
+		
 		barraProgresso = (ProgressBar)findViewById(R.id.atividade_inicial_barra_progresso);
 		barraProgresso.getProgressDrawable().setColorFilter(new PorterDuffColorFilter(Color.RED, Mode.MULTIPLY));
 
 		progresso = 0;
+		contador = 0;
 		barraProgresso.setProgress(progresso);
 
 		background = this.getWindow().getDecorView();
@@ -71,26 +83,27 @@ public class AtividadeInicial extends Activity {
 	}
 
 	public void reiniciar(View componente) {
+		if (componente != null) {
+			vetorSequencias = gerarSequencia();
+			barraProgresso.setVisibility(View.VISIBLE);
+			rotuloProgresso.setVisibility(View.VISIBLE);
+			rotuloParabens.setVisibility(View.GONE);
+			rotuloVoceTem.setVisibility(View.GONE);
+		}
 		RotateAnimation anim = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
 		anim.setInterpolator(new LinearInterpolator());
 		anim.setDuration(500);
-
-		final ImageView compReiniciar = (ImageView) findViewById(R.id.atividade_inicial_imagem_reiniciar);
-		compReiniciar.startAnimation(anim);
-		
-		progresso = 0;
-		barraProgresso.setProgress(progresso);
+		reiniciar.startAnimation(anim);
 		restauraComponente(um);
 		restauraComponente(dois);
-		
 		restauraComponente(tres);
 		restauraComponente(quatro);
 		restauraComponente(cinco);
 		restauraComponente(seis);
-		cinco.setVisibility(View.VISIBLE);
-		seis.setVisibility(View.VISIBLE);
+		progresso = 0;
+		contador = 0;
+		barraProgresso.setProgress(progresso);
 		background.setBackgroundColor(Color.WHITE);
-		vetorSequencias = gerarSequencia();
 	}
 	
 	public void restauraComponente(View componente) {
@@ -111,36 +124,63 @@ public class AtividadeInicial extends Activity {
 		progresso += 17;
 		barraProgresso.setProgress(progresso);
 		componente.setVisibility(View.GONE);
+		if (contador == vetorSequencias.length) {
+			rotuloParabens.setVisibility(View.VISIBLE);
+			rotuloVoceTem.setVisibility(View.VISIBLE);
+			barraProgresso.setVisibility(View.GONE);
+			rotuloProgresso.setVisibility(View.GONE);
+		}
+	}
+	
+	public boolean valida(int numero) {
+		if (numero == vetorSequencias[contador]) {
+			contador++;
+			return true;
+		}
+		reiniciar(null);
+		return false;
 	}
 
 	public void um(View componente) {
-		animaComponente(componente);
-		background.setBackgroundColor(Color.BLUE);
+		if (valida(1)) {
+			animaComponente(componente);
+			background.setBackgroundColor(Color.BLUE);
+		}
 	}
 
 	public void dois(View componente) {
-		animaComponente(componente);
-		background.setBackgroundColor(Color.RED);
+		if (valida(2)) {
+			animaComponente(componente);
+			background.setBackgroundColor(Color.RED);
+		}
 	}
 
 	public void tres(View componente) {
-		animaComponente(componente);
-		background.setBackgroundColor(Color.GREEN);
+		if (valida(3)) {
+			animaComponente(componente);
+			background.setBackgroundColor(Color.GREEN);
+		}
 	}
 
 	public void quatro(View componente) {
-		animaComponente(componente);
-		background.setBackgroundColor(Color.YELLOW);
+		if (valida(4)) {
+			animaComponente(componente);
+			background.setBackgroundColor(Color.YELLOW);
+		}
 	}
 
 	public void cinco(View componente) {
-		animaComponente(componente);
-		background.setBackgroundColor(Color.GRAY);
+		if (valida(5)) {
+			animaComponente(componente);
+			background.setBackgroundColor(Color.GRAY);
+		}
 	}
 
 	public void seis(View componente) {
-		animaComponente(componente);
-		background.setBackgroundColor(Color.DKGRAY);
+		if (valida(6)) {
+			animaComponente(componente);
+			background.setBackgroundColor(Color.DKGRAY);
+		}
 	}
 
 	@Override

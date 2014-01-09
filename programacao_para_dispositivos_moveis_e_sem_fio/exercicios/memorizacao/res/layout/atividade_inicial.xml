@@ -93,4 +93,28 @@
         android:onClick="dois"
         android:src="@drawable/dois" />
 
+    <TextView
+        android:id="@+id/atividade_inicial_rotulo_parabens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/parabens"
+        android:textSize="20pt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/atividade_inicial_rotulo_voce_tem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/atividade_inicial_rotulo_parabens"
+        android:layout_alignRight="@+id/atividade_inicial_rotulo_parabens"
+        android:layout_below="@+id/atividade_inicial_imagem_reiniciar"
+        android:layout_marginTop="200dp"
+        android:text="@string/voce_tem"
+        android:textAlignment="gravity"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="14pt" />
+
 </RelativeLayout>
