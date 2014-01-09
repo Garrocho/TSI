@@ -1,15 +1,10 @@
 package com.memorizacao.atividade.init;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Random;
-
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffColorFilter;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
@@ -23,6 +18,7 @@ public class AtividadeInicial extends Activity {
 	private ImageView um, dois, tres, quatro, cinco, seis;
 	private int progresso;
 	private View background;
+	private int[] vetorSequencias;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,30 +39,29 @@ public class AtividadeInicial extends Activity {
 		quatro = (ImageView)findViewById(R.id.atividade_inicial_imagem_quatro);
 		cinco = (ImageView)findViewById(R.id.atividade_inicial_imagem_cinco);
 		seis = (ImageView)findViewById(R.id.atividade_inicial_imagem_seis);
+		
+		vetorSequencias = gerarSequencia();
 	}
 
-	public void gerarSequencia() {
-		Random gerador = new Random(19700621);
-		boolean sair;
-		int[] numeros = new int[6];
-		int contador = 0;
-		for (int i = 0; i < numeros.length; i++) {
-			sair = false;
-			while (!sair) {
-				sair = true;
-				int numero = gerador.nextInt(6);
-				for (int k =0; k < contador; k++) {
-					if (numero == numeros[k]) {
-						sair = false;
-					}
-				}
-				if (sair)
-					numeros[contador++] = numero+1;
-			}
+	public int[] gerarSequencia() {
+		int valor;  
+		int vetor[] = new int[6];  
+		boolean Salvar = false;  
+
+		for (int i = 0; i < 6 ; i++){  
+			valor = 1 + (int) (Math.random()*6);   
+			Salvar = true ;  
+			for (int y=0;y<=i;y++ ){  
+				if (vetor[y] == valor){  
+					Salvar = false;  
+					i--;  
+				}  
+			}   
+			if (Salvar){                            
+				vetor[i] = valor;
+			}                                               
 		}
-		for (int g= 0; g < numeros.length; g++) {
-			Log.d("numeros", String.valueOf(numeros[g]));
-		}
+		return vetor;
 	}
 
 	public void reiniciar(View componente) {
@@ -79,7 +74,7 @@ public class AtividadeInicial extends Activity {
 		cinco.setVisibility(View.VISIBLE);
 		seis.setVisibility(View.VISIBLE);
 		background.setBackgroundColor(Color.WHITE);
-		gerarSequencia();
+		vetorSequencias = gerarSequencia();
 	}
 
 	public void um(View componente) {
