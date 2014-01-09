@@ -98,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/atividade_inicial_imagem_reiniciar"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
         android:text="@string/parabens"
         android:textSize="20pt"
@@ -108,13 +108,13 @@
         android:id="@+id/atividade_inicial_rotulo_voce_tem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/atividade_inicial_rotulo_parabens"
-        android:layout_alignRight="@+id/atividade_inicial_rotulo_parabens"
+        android:layout_alignLeft="@+id/atividade_inicial_rotulo_progresso"
+        android:layout_alignRight="@+id/atividade_inicial_barra_progresso"
         android:layout_below="@+id/atividade_inicial_imagem_reiniciar"
-        android:layout_marginTop="200dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="160dp"
         android:text="@string/voce_tem"
-        android:textAlignment="gravity"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="14pt" />
+        android:textSize="10pt" />
 
 </RelativeLayout>
