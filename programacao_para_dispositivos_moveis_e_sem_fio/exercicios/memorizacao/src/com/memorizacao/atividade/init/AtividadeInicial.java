@@ -7,6 +7,10 @@ import android.graphics.PorterDuffColorFilter;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
@@ -67,55 +71,63 @@ public class AtividadeInicial extends Activity {
 	public void reiniciar(View componente) {
 		progresso = 0;
 		barraProgresso.setProgress(progresso);
-		um.setVisibility(View.VISIBLE);
-		dois.setVisibility(View.VISIBLE);
-		tres.setVisibility(View.VISIBLE);
-		quatro.setVisibility(View.VISIBLE);
-		cinco.setVisibility(View.VISIBLE);
-		seis.setVisibility(View.VISIBLE);
+		restauraComponente(um);
+		restauraComponente(dois);
+		restauraComponente(tres);
+		restauraComponente(quatro);
+		restauraComponente(cinco);
+		restauraComponente(seis);
 		background.setBackgroundColor(Color.WHITE);
 		vetorSequencias = gerarSequencia();
 	}
-
-	public void um(View componente) {
+	
+	public void restauraComponente(View componente) {
+		componente.setEnabled(true);
+		Animation fadeIn = new AlphaAnimation(0, 1);
+	    fadeIn.setInterpolator(new DecelerateInterpolator());
+	    fadeIn.setDuration(1500);
+	    componente.setAnimation(fadeIn);
+		componente.setVisibility(View.VISIBLE);
+	}
+	
+	public void animaComponente(View componente) {
+		componente.setEnabled(false);
+		Animation fadeOut = new AlphaAnimation(1, 0);
+	    fadeOut.setInterpolator(new AccelerateInterpolator());
+	    fadeOut.setDuration(1500);
+	    componente.setAnimation(fadeOut);
 		progresso += 17;
 		barraProgresso.setProgress(progresso);
-		um.setVisibility(View.GONE);
+		componente.setVisibility(View.GONE);
+	}
+
+	public void um(View componente) {
+		animaComponente(componente);
 		background.setBackgroundColor(Color.BLUE);
 	}
 
 	public void dois(View componente) {
-		progresso += 17;
-		barraProgresso.setProgress(progresso);
-		dois.setVisibility(View.GONE);
+		animaComponente(componente);
 		background.setBackgroundColor(Color.RED);
 	}
 
 	public void tres(View componente) {
-		progresso += 17;
-		barraProgresso.setProgress(progresso);
-		tres.setVisibility(View.GONE);
+		animaComponente(componente);
 		background.setBackgroundColor(Color.GREEN);
 	}
 
 	public void quatro(View componente) {
-		progresso += 17;
-		barraProgresso.setProgress(progresso);
-		quatro.setVisibility(View.GONE);
+		animaComponente(componente);
 		background.setBackgroundColor(Color.YELLOW);
 	}
 
 	public void cinco(View componente) {
-		progresso += 17;
-		barraProgresso.setProgress(progresso);
-		cinco.setVisibility(View.GONE);
+		animaComponente(componente);
 		background.setBackgroundColor(Color.GRAY);
 	}
 
 	public void seis(View componente) {
-		progresso += 17;
-		barraProgresso.setProgress(progresso);
-		seis.setVisibility(View.GONE);
+		animaComponente(componente);
 		background.setBackgroundColor(Color.DKGRAY);
 	}
 
