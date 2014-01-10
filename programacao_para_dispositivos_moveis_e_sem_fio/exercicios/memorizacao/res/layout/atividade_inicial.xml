@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".AtividadeInicial" >
+    tools:context=".CapMem" >
 
     <TextView
         android:id="@+id/atividade_inicial_rotulo_progresso"
