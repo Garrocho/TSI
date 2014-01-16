@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VersaoDoJava</string>
+    <string name="action_settings">Settings</string>
+    <string name="resultado">Obter uma String</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_obter_string">ObterString</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
