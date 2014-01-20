@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.tempo.R;
-import com.tempo.atividade.tarefas.TarefaObterTempo;
+import com.tempo.tarefas.TarefaObterTempo;
 
 public class Tempo extends Activity {
 	
