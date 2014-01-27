@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ListaUsuarios</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo">Cadastro de Usuário</string>
+    <string name="title_activity_lista_usuarios">ListaUsuarios</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="textoNome">Nome:</string>
+    <string name="textoEmail">E-mail:</string>
+    <string name="enviar">Enviar</string>
+    <string name="lista">Ir para lista</string>
+    <string name="voltar">Voltar</string>
+        
+</resources>
