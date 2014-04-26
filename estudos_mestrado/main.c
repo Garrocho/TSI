@@ -1,25 +1,53 @@
-#include "ordenacao.h"
-#include "recursao.h"
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "grafo.h"
 
-int main() {
-	//int vetor[10] = {8,5,3,2,7,10,9,6,1,4};
-	//imprime(vetor, 10);
-	//selection_sort(&vetor, 10);
-	//imprime(vetor, 10);
-	//char frase[7] = "charles";
-	//frase_ao_contrario(frase, 7);
-	//int i;
-	//for(i=0; i<13; i++)
-    //   printf("%d ", fibonacci(i+1));
-    int resultado;
-    resultado = soma(20,20);
-    printf("%d", resultado);
-	return 0;
-};
+/* Obtem a quantidade de vertices */
+int tam_arquivo(char* endereco) {
+	FILE *arquivo;
+	char linha[50];
 
-void imprime(int vetor[], int tamanho) {
-	int i;
-	for (i=0; i < tamanho; i++)
-		printf("%d ", vetor[i]);
-	printf("\n");
-};
+	arquivo = fopen(endereco, "r");
+	fgets(linha, 100, arquivo);
+	fclose(arquivo);
+
+	return atoi(linha);
+}
+
+/* Insere os vertices no grafo */
+void ler_arquivo(char* endereco, Tipo_Grafo* grafo, int tamanho) {
+	FILE *arquivo;
+	char linha[50];
+	char *partes;
+	int vertice, aresta, distancia;
+
+	arquivo = fopen(endereco, "r");
+	fgets(linha, 100, arquivo);
+
+	while (!feof(arquivo))
+	{
+		fgets(linha, 100, arquivo);
+		partes = (char*)strtok(linha, " ");
+		vertice = atoi(partes);
+ 		partes = (char*)strtok(NULL, " ");
+ 		aresta = atoi(partes);
+ 		partes = (char*)strtok(NULL, " ");
+ 		distancia = atoi(partes);
+
+ 		insere_vertice(grafo, vertice-1, tamanho);
+ 		insere_vertice(grafo, aresta-1, tamanho);
+ 		insere_aresta(grafo, vertice-1, aresta-1, distancia);
+	}
+	fclose(arquivo);
+}
+
+void main() {
+    Tipo_Grafo *grafo;
+    int tamanho = tam_arquivo("tspfase8.txt");
+    grafo = cria_grafo(tamanho);
+    ler_arquivo("tspfase8.txt", grafo, tamanho);
+	dijkstra(grafo, 1, 11);
+	//imprime(grafo);
+    termina_grafo(grafo, tamanho);
+}
